@@ -28,7 +28,7 @@ If you use this dataset, please cite our paper.
 
 ---
 
-## CSEPrompts Dataset
+## CSEPrompts Benchmark
 - **Sources:** Coding websites (e.g., CodingBat, LearnPython) and MOOCs (e.g., Harvard's CS50, UMich's PforE).
 - **Statistics:** 118 coding prompts from websites, 101 from MOOCs, and 50 MCQs.
 - **Collection:** Manual collection ensuring no duplication.

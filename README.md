@@ -88,30 +88,10 @@
 - **MCQ Performance:** Comparison with MathQA-Python benchmark.
 
 ### Pass@1 Comparison
-| Model       | HumanEval | MBPP | CSEPrompts-MOOCs | CSEPrompts-Academic |
-|-------------|-----------|------|------------------|---------------------|
-| GPT3.5      | 73.2      | 81.7 | 83.1             | 71.3                |
-| Mistral     | 28.7      | 50.1 | 74.6             | 22.8                |
-| WizardCoder | 48.2      | 56.6 | 48.3             | 28.7                |
-| StarCoder   | 24.4      | 57.7 | 66.1             | 34.7                |
-| CodeLLaMA   | 34.1      | 57.6 | 30.5             | 39.6                |
-| LLaMA       | 24.1      | 41.2 | 44.9             | 13.9                |
-| Falcon      |
-
- 15.7      | 19.3 | 23.7             | 0.9                 |
-| MPT         | 7.2       | 12.4 | 11.9             | 3.9                 |
+![Pass@1 Comparison](passat1_comparison.png)
 
 ### MCQ Performance Comparison
-| Model       | MathQA | CSEPrompts-MCQ |
-|-------------|--------|----------------|
-| GPT3.5      | 32.2   | 54             |
-| Mistral     | 31.9   | 34             |
-| CodeLLaMA   | 27.1   | 30             |
-| Falcon      | 15.7   | 26             |
-| LLaMA       | 22.1   | 24             |
-| StarCoder   | 14.4   | 22             |
-| WizardCoder | 18.3   | 16             |
-| MPT         | 3.2    | 14             |
+![MCQ Performance Comparison](mcq_performance.png)
 
 ## Conclusion
 - **Findings:** Detailed performance analysis of LLMs on CS prompts and MCQs.
@@ -126,3 +106,6 @@
 - [li2023starcoder](https://arxiv.org/abs/2305.06161)
 - [luo2023wizardcoder](https://arxiv.org/abs/2306.08568)
 - [jiang2023mistral](https://arxiv.org/abs/2310.06825)
+
+## Repository
+- **URL:** [CSEPrompts GitHub Repository](https://github.com/mraihan-gmu/CSEPrompts)

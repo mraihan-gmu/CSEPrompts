@@ -1,4 +1,3 @@
-```markdown
 # CSEPrompts: A Benchmark of Introductory Computer Science Prompts
 
 ## Overview

@@ -1,18 +1,40 @@
 # CSEPrompts: A Benchmark of Introductory Computer Science Prompts
 
-## Overview
-- **Title:** CSEPrompts: A Benchmark of Introductory Computer Science Prompts
-- **Authors:** Nishat Raihan, Dhiman Goswami, Sadiya Sayara Chowdhury Puspo, Christian Newman, Tharindu Ranasinghe, Marcos Zampieri
-- **Institutions:**
-  - George Mason University, Fairfax, VA, USA
-  - Rochester Institute of Technology, Rochester, NY, USA
-  - Aston University, Birmingham, UK
-- **Abstract:** CSEPrompts is a framework with hundreds of programming exercise prompts and multiple-choice questions from introductory CS and programming courses. It evaluates the performance of LLMs in generating Python code and answering basic CS questions.
+CSEPrompts is a framework with hundreds of programming exercise prompts and multiple-choice questions from introductory CS and programming courses. It evaluates the performance of LLMs in generating Python code and answering basic CS questions.
 
-## Introduction
-- **Advancements in NLP and LLMs:** GPT-3, GPT-4, and other models revolutionizing text generation and their applications in education.
-- **Objective:** Understand the impact of LLMs in CS education and assessment.
-- **CSEPrompts:** Comprises 219 programming prompts and 50 MCQs from coding websites and MOOCs.
+---
+
+**Publication**: [International Symposium on Methodologies for Intelligent Systems](https://link.springer.com/book/10.1007/978-3-031-62700-2) 
+
+**Read in [arXiv](https://arxiv.org/pdf/2404.02540)** 
+
+---
+
+## 📝 Citation
+
+If you use this dataset, please cite our paper.
+
+```bibtex
+@inproceedings{newman2024cseprompts,
+  title={CSEPrompts: A Benchmark of Introductory Computer Science Prompts},
+  author={Newman, Christian and Ranasinghe, Tharindu and Zampieri, Marcos},
+  booktitle={Foundations of Intelligent Systems: 27th International Symposium, ISMIS 2024, Poitiers, France, June 17--19, 2024, Proceedings},
+  pages={45},
+  organization={Springer Nature}
+}
+```
+
+
+
+---
+
+## CSEPrompts Dataset
+- **Sources:** Coding websites (e.g., CodingBat, LearnPython) and MOOCs (e.g., Harvard's CS50, UMich's PforE).
+- **Statistics:** 118 coding prompts from websites, 101 from MOOCs, and 50 MCQs.
+- **Collection:** Manual collection ensuring no duplication.
+
+---
+
 
 ## Research Questions
 1. **RQ1:** LLM performance on introductory CS assignments compared to existing benchmarks.
@@ -20,15 +42,9 @@
 3. **RQ3:** LLMs' performance in generating code vs. answering MCQs.
 4. **RQ4:** Performance of Code LLMs vs. raw LLMs.
 
-## Related Work
-- Evolution of NLP models from word embeddings to advanced LLMs.
-- Impact of GPT models in various domains including education.
-- Need for benchmarks specific to educational coding tasks.
+---
 
-## CSEPrompts Dataset
-- **Sources:** Coding websites (e.g., CodingBat, LearnPython) and MOOCs (e.g., Harvard's CS50, UMich's PforE).
-- **Statistics:** 118 coding prompts from websites, 101 from MOOCs, and 50 MCQs.
-- **Collection:** Manual collection ensuring no duplication.
+
 
 ### List of Coding Websites & MOOCs
 | Name             | Link                                                           |
@@ -47,6 +63,8 @@
 | CS1301xIII (GT)  | [https://learning.edx.org/course/course-v1:GTx+CS1301xIII+1T2023/home](https://learning.edx.org/course/course-v1:GTx+CS1301xIII+1T2023/home) |
 | CS1301xIV (GT)   | [https://learning.edx.org/course/course-v1:GTx+CS1301xIV+1T2023/home](https://learning.edx.org/course/course-v1:GTx+CS1301xIV+1T2023/home) |
 
+---
+
 ### Summary of Coding Prompts from Various Sources
 |                          | Platform         | Prompts | University | Course      | Prompts | University | Course     | Prompts |
 |--------------------------|------------------|---------|------------|-------------|---------|------------|------------|---------|
@@ -57,6 +75,8 @@
 |                          | HackerRank       | 23      | **GT**     | CS1301xIII  | 17      |            |            |         |
 | **Total**                |                  | 118     |            | **Total**   | 101     |            | **Total**  | 50      |
 
+---
+
 ### Statistics for Prompts
 | Metric             | CodingSites | Academic | MCQ |
 |--------------------|-------------|----------|-----|
@@ -66,10 +86,14 @@
 | Mean No. of Tokens | 28          | 158      | 106 |
 | Standard Deviation | 16          | 72       | 51  |
 
+---
+
 ## Experimental Setup
 - **LLMs Tested:** GPT-3.5, Llama2, Falcon, MPT, Code-Llama, StarCoder, WizardCoder, Mistral.
 - **Tasks:** Code generation and MCQ answering.
 - **Evaluation:** Code snippets tested using pytest, labeled based on test case success.
+
+---
 
 ### LLMs Used on CSEPrompts
 | LLM        | Parameter | Model Type | Reference                                   |
@@ -83,19 +107,18 @@
 | WizardCoder| 7B        | Fine-tuned | [luo2023wizardcoder](https://arxiv.org/abs/2306.08568) |
 | Mistral    | 7B        | Base       | [jiang2023mistral](https://arxiv.org/abs/2310.06825) |
 
-## Results
-- **Comparison with Benchmarks:** CSEPrompts vs. HumanEval and MBPP using Pass@1 metric.
-- **MCQ Performance:** Comparison with MathQA-Python benchmark.
+---
+
 
 ### Pass@1 Comparison
 ![Pass@1 Comparison](passat1_comparison.png)
 
+---
+
 ### MCQ Performance Comparison
 ![MCQ Performance Comparison](mcq_performance.png)
 
-## Conclusion
-- **Findings:** Detailed performance analysis of LLMs on CS prompts and MCQs.
-- **Future Work:** Expand dataset, include more LLMs for a comprehensive study.
+---
 
 ## References
 - [OpenAI2023GPT4TR](https://arxiv.org/abs/2303.08774)
@@ -107,5 +130,3 @@
 - [luo2023wizardcoder](https://arxiv.org/abs/2306.08568)
 - [jiang2023mistral](https://arxiv.org/abs/2310.06825)
 
-## Repository
-- **URL:** [CSEPrompts GitHub Repository](https://github.com/mraihan-gmu/CSEPrompts)

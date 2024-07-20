@@ -15,12 +15,13 @@ CSEPrompts is a framework with hundreds of programming exercise prompts and mult
 If you use this dataset, please cite our paper.
 
 ```bibtex
-@inproceedings{newman2024cseprompts,
+@inproceedings{raihan2024cseprompts,
   title={CSEPrompts: A Benchmark of Introductory Computer Science Prompts},
-  author={Newman, Christian and Ranasinghe, Tharindu and Zampieri, Marcos},
-  booktitle={Foundations of Intelligent Systems: 27th International Symposium, ISMIS 2024, Poitiers, France, June 17--19, 2024, Proceedings},
-  pages={45},
-  organization={Springer Nature}
+  author={Raihan, Nishat and Goswami, Dhiman and Puspo, Sadiya Sayara Chowdhury and Newman, Christian and Ranasinghe, Tharindu and Zampieri, Marcos},
+  booktitle={International Symposium on Methodologies for Intelligent Systems},
+  pages={45--54},
+  year={2024},
+  organization={Springer}
 }
 ```
 

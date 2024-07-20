@@ -1,0 +1,18 @@
+Unnamed: 0,Unnamed: 1,Unnamed: 2,Unnamed: 3,Unnamed: 4,Unnamed: 5,Unnamed: 6
+LLMs,Platforms,No Code Written,Code not executed,All test case failed,Partial Test cases passed,All test cases passed
+GPT3.5,Academic,0,5.94,6.93,15.84,71.29
+,Coding Sites,0,9.32,5.08,2.54,83.06
+FALCON,Academic,4.95,42.57,40.59,10.9,0.99
+,Coding Sites,0.85,32.2,28.81,14.41,23.73
+LLaMA,Academic,4.95,28.71,44.55,7.92,13.97
+,Coding Sites,0,25.42,20.34,9.32,44.92
+MPT,Academic,7.92,69.31,13.86,4.95,3.96
+,Coding Sites,5.08,62.71,16.95,3.39,11.87
+Code Llama,Academic,13.86,24.75,7.92,13.86,39.6
+,Coding Sites,15.25,14.41,35.59,4.24,30.51
+StarCoder,Academic,19.8,10.89,19.8,14.85,34.65
+,Coding Sites,14.41,1.69,10.17,7.63,66.1
+WizardCoder,Academic,17.82,31.68,12.87,8.91,28.71
+,Coding Sites,13.56,5.08,29.66,3.39,48.31
+Mistral,Academic,30.69,27.72,12.87,3.96,22.77
+,Coding Sites,4.24,3.39,12.71,5.08,74.58

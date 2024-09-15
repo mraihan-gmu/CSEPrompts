@@ -49,7 +49,7 @@ If you use this dataset, please cite our paper.
 ### Statistics for Prompts
 | Metric             | CodingSites | Academic | MCQ |
 |--------------------|-------------|----------|-----|
-| Total Prompts      | 118         | 101      | 50  |
+| Total Prompts      | 118         | 101      | 100 |
 | Max. No. of Tokens | 101         | 372      | 221 |
 | Min. No. of Tokens | 5           | 17       | 15  |
 | Mean No. of Tokens | 28          | 158      | 106 |

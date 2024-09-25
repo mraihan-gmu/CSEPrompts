@@ -1,0 +1,3613 @@
+#,Prompt,Test Cases
+1,"Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters.","Test Case 1:
+Input: ""Hello World""
+Output: [0, 6]
+
+Test Case 2:
+Input: ""wElcOmE To ChatGPT""
+Output: [1, 4, 7, 9, 14]
+
+Test Case 3:
+Input: ""allsmallletters""
+Output: []
+
+Test Case 4:
+Input: ""CAPSLOCKON""
+Output: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Test Case 5:
+Input: ""First, Second, Third.""
+Output: [0, 7, 15]"
+2,"Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If the length of the string is even, you should return the middle two letters.","Test Case 1:
+Input: ""hello""
+Output: ""l""
+
+Test Case 2:
+Input: ""abcdef""
+Output: ""cd""
+
+Test Case 3:
+Input: ""a""
+Output: ""a""
+
+Test Case 4:
+Input: ""ChatGPT""
+Output: ""tG""
+
+Test Case 5:
+Input: ""programming""
+Output: ""g"""
+3,"The aim of this challenge is, given a dictionary of people's online status, to count the number of people who are online.","Test Case 1:
+Input: {""Alice"": ""online"", ""Bob"": ""offline"", ""Charlie"": ""online"", ""David"": ""offline""}
+Output: 2
+
+Test Case 2:
+Input: {""Eva"": ""online"", ""Frank"": ""online"", ""Grace"": ""online""}
+Output: 3
+
+Test Case 3:
+Input: {""Henry"": ""offline"", ""Isabelle"": ""offline"", ""Jack"": ""offline""}
+Output: 0
+
+Test Case 4:
+Input: {}
+Output: 0
+
+Test Case 5:
+Input: {""Katie"": ""online"", ""Liam"": ""offline"", ""Mia"": ""online"", ""Nina"": ""offline"", ""Oscar"": ""online"", ""Paul"": ""online""}
+Output: 4"
+4,"Define a function, random_number, that takes no parameters. The function must generate a random integer between 1 and 100.","Test Case 1:
+Input:
+Output: (Any number between 1 and 100, e.g., 57)
+
+Test Case 2:
+Input:
+Output: (Any number between 1 and 100, e.g., 23)
+
+Test Case 3:
+Input:
+Output: (Any number between 1 and 100, e.g., 89)
+
+Test Case 4:
+Input:
+Output: (Any number between 1 and 100, e.g., 1)
+
+Test Case 5:
+Input:
+Output: (Any number between 1 and 100, e.g., 100)
+
+"
+5,"Write a function named only_ints that takes two parameters. Your function should return True if both parameters are integers, and False otherwise.","Test Case 1:
+Input: (5, 10)
+Output: True
+
+Test Case 2:
+Input: (5, ""10"")
+Output: False
+
+Test Case 3:
+Input: (""Hello"", ""World"")
+Output: False
+
+Test Case 4:
+Input: (7.5, 10)
+Output: False
+
+Test Case 5:
+Input: (-5, 0)
+Output: True"
+6,"Write a function named add_dots that takes a string and adds ""."" in between each letter. For example, calling add_dots(""test"") should return the string ""t.e.s.t"". Then, below the add_dots function, write another function named remove_dots that removes all dots from a string.","Test Case 1:
+Input: ""test""
+Output: ""t.e.s.t""
+
+Test Case 2:
+Input: ""hello""
+Output: ""h.e.l.l.o""
+
+Test Case 3:
+Input: ""a""
+Output: ""a""
+
+Test Case 4:
+Input: ""ab""
+Output: ""a.b""
+
+Test Case 5:
+Input: ""dot""
+Output: ""d.o.t""
+
+For the remove_dots function:
+
+Test Case 1:
+Input: ""t.e.s.t""
+Output: ""test""
+
+Test Case 2:
+Input: ""h.e.l.l.o""
+Output: ""hello""
+
+Test Case 3:
+Input: ""a""
+Output: ""a""
+
+Test Case 4:
+Input: ""..a.b..""
+Output: ""ab""
+
+Test Case 5:
+Input: ""n.o.d.o.t.s""
+Output: ""nodots"""
+7,The goal of this challenge is to analyze a binary string consisting of only zeros and ones. Your code should find the biggest number of consecutive zeros in the string.,"Test Case 1:
+Input: ""10000101111000""
+Output: 4
+
+Test Case 2:
+Input: ""11001110001111""
+Output: 3
+
+Test Case 3:
+Input: ""1111111""
+Output: 0
+
+Test Case 4:
+Input: ""10000001""
+Output: 6
+
+Test Case 5:
+Input: ""00110001001100010000""
+Output: 5"
+8,"Write a function called longest_word that takes one argument, a list of words, and returns the length of the longest word in the list.","Test Case 1:
+Input: [""apple"", ""banana"", ""cherry""]
+Output: 6
+
+Test Case 2:
+Input: [""a"", ""ab"", ""abc"", ""abcd""]
+Output: 4
+
+Test Case 3:
+Input: [""short"", ""longer"", ""longest""]
+Output: 7
+
+Test Case 4:
+Input: [""one"", ""two"", ""three"", ""four"", ""five""]
+Output: 5
+
+Test Case 5:
+Input: [""hippopotamus"", ""cat"", ""horse""]
+Output: 12"
+9,Write a function that counts how many different countries are represented in a list of country IDs.,"Test Case 1:
+Input: [""US"", ""CA"", ""US"", ""MX"", ""CA""]
+Output: 3
+
+Test Case 2:
+Input: [""FR"", ""FR"", ""FR"", ""FR""]
+Output: 1
+
+Test Case 3:
+Input: [""JP"", ""CN"", ""AU"", ""NZ"", ""IN"", ""SA"", ""ZA""]
+Output: 7
+
+Test Case 4:
+Input: []
+Output: 0
+
+Test Case 5:
+Input: [""BR"", ""AR"", ""VE"", ""CO"", ""PE"", ""BR"", ""AR""]
+Output: 5"
+10,"A palindrome is a word that is the same forwards as backwards. If the word is the same backwards as forwards, you should return True. Otherwise, you should return False.","Test Case 1:
+Input: ""radar""
+Output: True
+
+Test Case 2:
+Input: ""apple""
+Output: False
+
+Test Case 3:
+Input: ""level""
+Output: True
+
+Test Case 4:
+Input: ""deified""
+Output: True
+
+Test Case 5:
+Input: ""palindrome""
+Output: False"
+11,"Print Hello, World! to stdout.","Test Case 1:
+Input: (no input since the function doesn't take any parameters)
+Output: ""Hello, World!""
+
+Test Case 2:
+Input: (no input since the function doesn't take any parameters)
+Output: ""Hello, World!""
+
+Test Case 3:
+Input: (no input since the function doesn't take any parameters)
+Output: ""Hello, World!""
+
+Test Case 4:
+Input: (no input since the function doesn't take any parameters)
+Output: ""Hello, World!""
+
+Test Case 5:
+Input: (no input since the function doesn't take any parameters)
+Output: ""Hello, World!"""
+12,"Given an integer, n, perform the following conditional actions: If n is odd, print Weird. If n is even and in the inclusive range of 2 to 5, print Not Weird. If n is even and in the inclusive range of 6 to 20, print Weird. If n is even and greater than 20, print Not Weird.","Test Case 1:
+Input: 3
+Output: ""Weird""
+
+Test Case 2:
+Input: 4
+Output: ""Not Weird""
+
+Test Case 3:
+Input: 8
+Output: ""Weird""
+
+Test Case 4:
+Input: 22
+Output: ""Not Weird""
+
+Test Case 5:
+Input: 18
+Output: ""Weird"""
+13,Read two integers from STDIN and print three lines where: The first line contains the sum of the two numbers. The second line contains the difference of the two numbers (first - second). The third line contains the product of the two numbers.,"Test Case 1:
+Input:
+3 2
+Output:
+5
+1
+6
+
+Test Case 2:
+Input:
+-5 4
+Output:
+-1
+-9
+-20
+
+Test Case 3:
+Input:
+7 0
+Output:
+7
+7
+0
+
+Test Case 4:
+Input:
+-3 -7
+Output:
+-10
+4
+21
+
+Test Case 5:
+Input:
+10 5
+Output:
+15
+5
+50"
+14,"Read two integers and print two lines. The first line should contain integer division, a//b. The second line should contain float division, a/b.","Test Case 1:
+Input:
+4 3
+Output:
+1
+1.3333333333333333
+
+Test Case 2:
+Input:
+10 2
+Output:
+5
+5.0
+
+Test Case 3:
+Input:
+5 4
+Output:
+1
+1.25
+
+Test Case 4:
+Input:
+22 7
+Output:
+3
+3.142857142857143
+
+Test Case 5:
+Input:
+9 4
+Output:
+2
+2.25"
+15,"Read an integer N. For all non-negative integers i<N, print i^2.","Test Case 1:
+Input:
+3
+Output:
+0
+1
+4
+
+Test Case 2:
+Input:
+5
+Output:
+0
+1
+4
+9
+16
+
+Test Case 3:
+Input:
+0
+Output:
+(No output as the range is empty for i<N)
+
+Test Case 4:
+Input:
+1
+Output:
+0
+
+Test Case 5:
+Input:
+4
+Output:
+0
+1
+4
+9"
+16,Write a function to check if the given year is leap or not.,"Test Case 1:
+Input: 2000
+Output: True
+
+Test Case 2:
+Input: 1900
+Output: False
+
+Test Case 3:
+Input: 2004
+Output: True
+
+Test Case 4:
+Input: 2100
+Output: False
+
+Test Case 5:
+Input: 2023
+Output: False"
+17,"Without using any string methods, try to print the following: 123...N","Test Case 1:
+Input: 5
+Output: 12345
+
+Test Case 2:
+Input: 3
+Output: 123
+
+Test Case 3:
+Input: 1
+Output: 1
+
+Test Case 4:
+Input: 10
+Output: 12345678910
+
+Test Case 5:
+Input: 7
+Output: 1234567"
+18,Take a list of integers (positive or negative or both) and return the sum of the absolute value of each element.,"Test Case 1:
+Input: [2, -3, 4, -1]
+Output: 10
+
+Test Case 2:
+Input: [-5, -4, -3, -2, -1]
+Output: 15
+
+Test Case 3:
+Input: [5, 4, 3, 2, 1]
+Output: 15
+
+Test Case 4:
+Input: [0, -1, 1, 0]
+Output: 2
+
+Test Case 5:
+Input: [-10, 20, -30, 40]
+Output: 100"
+19,Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function.,"Test Case 1:
+Input: 4
+Output: 10 (1 + 2 + 3 + 4)
+
+Test Case 2:
+Input: 5
+Output: 15 (1 + 2 + 3 + 4 + 5)
+
+Test Case 3:
+Input: 1
+Output: 1
+
+Test Case 4:
+Input: 10
+Output: 55 (1 + 2 + 3 + ... + 10)
+
+Test Case 5:
+Input: 100
+Output: 5050 (1 + 2 + 3 + ... + 100)
+
+"
+20,"Create a function that takes a number as an argument, increments the number by +1 and returns the result.","Test Case 1:
+Input: 5
+Output: 6
+
+Test Case 2:
+Input: -1
+Output: 0
+
+Test Case 3:
+Input: 0
+Output: 1
+
+Test Case 4:
+Input: 99
+Output: 100
+
+Test Case 5:
+Input: -101
+Output: -100"
+21,Write a function that takes an integer minutes and converts it to seconds.,"Test Case 1:
+Input: 5
+Output: 300 (5 minutes * 60 seconds/minute)
+
+Test Case 2:
+Input: 1
+Output: 60 (1 minute * 60 seconds/minute)
+
+Test Case 3:
+Input: 45
+Output: 2700 (45 minutes * 60 seconds/minute)
+
+Test Case 4:
+Input: 0
+Output: 0
+
+Test Case 5:
+Input: 120
+Output: 7200 (120 minutes * 60 seconds/minute)"
+22,"There is a single operator in Python, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.","Test Case 1:
+Input: 5, 2
+Output: 1 (Because 5 divided by 2 leaves a remainder of 1)
+
+Test Case 2:
+Input: 7, 3
+Output: 1 (Because 7 divided by 3 leaves a remainder of 1)
+
+Test Case 3:
+Input: 10, 4
+Output: 2 (Because 10 divided by 4 leaves a remainder of 2)
+
+Test Case 4:
+Input: 8, 2
+Output: 0 (Because 8 divided by 2 leaves no remainder)
+
+Test Case 5:
+Input: 15, 5
+Output: 0 (Because 15 divided by 5 leaves no remainder)"
+23,Create a function that takes length and width and finds the perimeter of a rectangle.,"Test Case 1:
+Input: 5, 3
+Output: 16 (Because 2*(5+3) = 16)
+
+Test Case 2:
+Input: 7, 2
+Output: 18 (Because 2*(7+2) = 18)
+
+Test Case 3:
+Input: 10, 4
+Output: 28 (Because 2*(10+4) = 28)
+
+Test Case 4:
+Input: 6, 6
+Output: 24 (Because 2*(6+6) = 24)
+
+Test Case 5:
+Input: 8, 5
+Output: 26 (Because 2*(8+5) = 26)"
+24,"Given two numbers, return True if the sum of both numbers is less than 100. Otherwise return False.","Test Case 1:
+Input: 45, 50
+Output: False (Because 45 + 50 = 95, which is less than 100)
+
+Test Case 2:
+Input: 30, 20
+Output: True (Because 30 + 20 = 50, which is less than 100)
+
+Test Case 3:
+Input: 90, 10
+Output: False (Because 90 + 10 = 100, which is not less than 100)
+
+Test Case 4:
+Input: -10, 5
+Output: True (Because -10 + 5 = -5, which is less than 100)
+
+Test Case 5:
+Input: 50, 49
+Output: True (Because 50 + 49 = 99, which is less than 100)
+
+"
+25,"Create a function that takes a number as its only argument and returns True if it's less than or equal to zero, otherwise return False.","Test Case 1:
+Input: -5
+Output: True
+
+Test Case 2:
+Input: 1
+Output: False
+
+Test Case 3:
+Input: 0
+Output: True
+
+Test Case 4:
+Input: -0.1
+Output: True
+
+Test Case 5:
+Input: 10
+Output: False"
+26,Create a function that takes a list and returns the first element.,"Test Case 1:
+Input: [5, 4, 3, 2, 1]
+Output: 5
+
+Test Case 2:
+Input: [""apple"", ""banana"", ""cherry""]
+Output: ""apple""
+
+Test Case 3:
+Input: [1]
+Output: 1
+
+Test Case 4:
+Input: [True, False, True]
+Output: True
+
+Test Case 5:
+Input: [3.5, 4.6, 5.7]
+Output: 3.5"
+27,"The parameter weekday is True if it is a weekday, and the parameter vacation is True if we are on vacation. We sleep in if it is not a weekday or we're on vacation. Return True if we sleep in.","Test Case 1:
+Input: weekday = True, vacation = False
+Output: False (It's a weekday and we're not on vacation)
+
+Test Case 2:
+Input: weekday = False, vacation = False
+Output: True (It's not a weekday and we're not on vacation)
+
+Test Case 3:
+Input: weekday = False, vacation = True
+Output: True (It's not a weekday and we're on vacation)
+
+Test Case 4:
+Input: weekday = True, vacation = True
+Output: True (It's a weekday but we're on vacation)
+
+Test Case 5:
+Input: weekday = False, vacation = False
+Output: True (It's not a weekday and we're not on vacation)"
+28,"We have two monkeys, a and b, and the parameters a_smile and b_smile indicate if each is smiling. We are in trouble if they are both smiling or if neither of them is smiling. Return True if we are in trouble.","Test Case 1:
+Input: a_smile = True, b_smile = True
+Output: True (Both are smiling)
+
+Test Case 2:
+Input: a_smile = False, b_smile = False
+Output: True (Neither is smiling)
+
+Test Case 3:
+Input: a_smile = True, b_smile = False
+Output: False (Only one is smiling)
+
+Test Case 4:
+Input: a_smile = False, b_smile = True
+Output: False (Only one is smiling)
+
+Test Case 5:
+Input: a_smile = False, b_smile = False
+Output: True (Neither is smiling)
+
+"
+29,"Given two int values, return their sum. Unless the two values are the same, then return double their sum.","Test Case 1:
+Input: 5, 5
+Output: 20 (Because 5 + 5 = 10 and 10*2 = 20)
+
+Test Case 2:
+Input: 3, 7
+Output: 10 (Simply 3 + 7)
+
+Test Case 3:
+Input: 0, 0
+Output: 0 (Because 0 + 0 = 0 and 0*2 = 0)
+
+Test Case 4:
+Input: -5, 5
+Output: 0 (Simply -5 + 5)
+
+Test Case 5:
+Input: 6, 6
+Output: 24 (Because 6 + 6 = 12 and 12*2 = 24)"
+30,"Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.","Test Case 1:
+Input: 18
+Output: 3 (Because 21 - 18 = 3)
+
+Test Case 2:
+Input: 25
+Output: 8 (Because (25 - 21) * 2 = 8)
+
+Test Case 3:
+Input: 21
+Output: 0 (No difference)
+
+Test Case 4:
+Input: 30
+Output: 18 (Because (30 - 21) * 2 = 18)
+
+Test Case 5:
+Input: 15
+Output: 6 (Because 21 - 15 = 6)"
+31,"We have a loud talking parrot. The ""hour"" parameter is the current hour time in the range 0..23. We are in trouble if the parrot is talking and the hour is before 7 or after 20. Return True if we are in trouble.","Test Case 1:
+Input: talking = True, hour = 6
+Output: True (The parrot is talking before 7)
+
+Test Case 2:
+Input: talking = True, hour = 7
+Output: False (The parrot is talking but it's not before 7 or after 20)
+
+Test Case 3:
+Input: talking = True, hour = 21
+Output: True (The parrot is talking after 20)
+
+Test Case 4:
+Input: talking = False, hour = 5
+Output: False (The parrot isn't talking)
+
+Test Case 5:
+Input: talking = True, hour = 12
+Output: False (The parrot is talking but it's during allowed hours)"
+32,"Given 2 ints, a and b, return True if one if them is 10 or if their sum is 10.","Test Case 1:
+Input: a = 5, b = 5
+Output: True (Because 5 + 5 = 10)
+
+Test Case 2:
+Input: a = 10, b = 3
+Output: True (Because one of them is 10)
+
+Test Case 3:
+Input: a = 4, b = 3
+Output: False (Neither is 10, and their sum isn't 10)
+
+Test Case 4:
+Input: a = 7, b = 10
+Output: True (Because one of them is 10)
+
+Test Case 5:
+Input: a = 2, b = 8
+Output: True (Because 2 + 8 = 10)"
+33,"Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.","Test Case 1:
+Input: 92
+Output: True (Because it's within 10 of 100)
+
+Test Case 2:
+Input: 112
+Output: True (Because it's within 10 of 100)
+
+Test Case 3:
+Input: 205
+Output: True (Because it's within 10 of 200)
+
+Test Case 4:
+Input: 50
+Output: False (It's not within 10 of either 100 or 200)
+
+Test Case 5:
+Input: 190
+Output: True (Because it's within 10 of 200)"
+34,"Given 2 int values, return True if one is negative and one is positive. Except if the parameter ""negative"" is True, then return True only if both are negative.","Test Case 1:
+Input: a = 5, b = -5, negative = False
+Output: True (One is positive and one is negative)
+
+Test Case 2:
+Input: a = -5, b = -5, negative = True
+Output: True (Both are negative and the ""negative"" parameter is True)
+
+Test Case 3:
+Input: a = 5, b = 5, negative = False
+Output: False (Both are positive)
+
+Test Case 4:
+Input: a = -5, b = 5, negative = True
+Output: False (One is negative, one is positive but the ""negative"" parameter is True)
+
+Test Case 5:
+Input: a = -5, b = -7, negative = False
+Output: False (Both are negative but the ""negative"" parameter is False)"
+35,"Given a string, return a new string where ""not "" has been added to the front. However, if the string already begins with ""not"", return the string unchanged.","Test Case 1:
+Input: ""happy""
+Output: ""not happy""
+
+Test Case 2:
+Input: ""not bad""
+Output: ""not bad"" (Because it already begins with ""not"")
+
+Test Case 3:
+Input: ""sad""
+Output: ""not sad""
+
+Test Case 4:
+Input: ""not good""
+Output: ""not good"" (Because it already begins with ""not"")
+
+Test Case 5:
+Input: ""okay""
+Output: ""not okay"""
+36,"Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).","Test Case 1:
+Input: str = ""hello"", n = 1
+Output: ""hllo"" (Because the character at index 1 is 'e')
+
+Test Case 2:
+Input: str = ""world"", n = 3
+Output: ""worl"" (Because the character at index 3 is 'l')
+
+Test Case 3:
+Input: str = ""python"", n = 0
+Output: ""ython"" (Because the character at index 0 is 'p')
+
+Test Case 4:
+Input: str = ""example"", n = 6
+Output: ""exampl"" (Because the character at index 6 is 'e')
+
+Test Case 5:
+Input: str = ""remove"", n = 2
+Output: ""remve"" (Because the character at index 2 is 'o')"
+37,"Add the numbers 1, 2, and 3 to the ""numbers"" list, and see what the ""print"" statement outputs","Test Case 1:
+Input: numbers = []
+Output: [1, 2, 3]
+
+Test Case 2:
+Input: numbers = [0]
+Output: [0, 1, 2, 3]
+
+Test Case 3:
+Input: numbers = [4, 5, 6]
+Output: [4, 5, 6, 1, 2, 3]
+
+Test Case 4:
+Input: numbers = [3, 2, 1]
+Output: [3, 2, 1, 1, 2, 3]
+
+Test Case 5:
+Input: numbers = [-1, -2, -3]
+Output: [-1, -2, -3, 1, 2, 3]"
+38,Fix the last line so that it outputs the sum of 1 and 2,"Test Case 1:
+Input:
+a = 1
+b = 2
+print(a - b)
+Output:
+3
+
+Test Case 2:
+Input:
+x = 1
+y = 2
+print(x * y)
+Output:
+3
+
+Test Case 3:
+Input:
+num1 = 1
+num2 = 2
+print(num1 / num2)
+Output:
+3
+
+Test Case 4:
+Input:
+first = 1
+second = 2
+print(first)
+Output:
+3
+
+Test Case 5:
+Input:
+one = 1
+two = 2
+print(one % two)
+Output:
+3"
+39,Use the 'format' method to print out the specified string with the correct values inserted,"Test Case 1:
+Input:
+""Hello, {}!""
+Output:
+""Hello, World!""
+
+Test Case 2:
+Input:
+""I have {} apples and {} oranges.""
+Output:
+""I have 5 apples and 6 oranges.""
+
+Test Case 3:
+Input:
+""My favorite color is {}.""
+Output:
+""My favorite color is blue.""
+
+Test Case 4:
+Input:
+""{} + {} = {}""
+Output:
+""3 + 4 = 7""
+
+Test Case 5:
+Input:
+""{} is the capital of {}.""
+Output:
+""Paris is the capital of France."""
+40,Loop through and print out all even numbers from the numbers list in the same order they are received. Don't print any numbers that come after 237 in the sequence,"Test Case 1:
+Input:
+[2, 4, 6, 8, 237, 10, 12]
+Output:
+2
+4
+6
+8
+
+Test Case 2:
+Input:
+[1, 3, 5, 7, 9, 2, 4, 6, 237, 238, 240]
+Output:
+2
+4
+6
+
+Test Case 3:
+Input:
+[237, 2, 4, 6, 8, 10]
+Output:
+
+(Note: No numbers should be printed since 237 is the first in the sequence)
+
+Test Case 4:
+Input:
+[2, 4, 6, 237, 8, 10, 12, 14, 16]
+Output:
+2
+4
+6
+
+Test Case 5:
+Input:
+[1, 3, 237, 5, 238, 240, 242, 244]
+Output:
+
+(Note: No even numbers before 237 in this sequence)"
+41,"Add a function named list_benefits() that returns the following list of strings: ""More organized code"", ""More readable code"", ""Easier code reuse"", ""Allowing programmers to share and connect code together"". Add a function named build_sentence(info) which receives a single argument containing a string and returns a sentence starting with the given string and ending with the string "" is a benefit of functions!""","Test Case 1:
+Function Call:
+list_benefits()
+Output:
+[""More organized code"", ""More readable code"", ""Easier code reuse"", ""Allowing programmers to share and connect code together""]
+
+Test Case 2:
+Function Call:
+build_sentence(""More organized code"")
+Output:
+""More organized code is a benefit of functions!""
+
+Test Case 3:
+Function Call:
+build_sentence(""More readable code"")
+Output:
+""More readable code is a benefit of functions!""
+
+Test Case 4:
+Function Call:
+build_sentence(""Easier code reuse"")
+Output:
+""Easier code reuse is a benefit of functions!""
+
+Test Case 5:
+Function Call:
+build_sentence(""Allowing programmers to share and connect code together"")
+Output:
+""Allowing programmers to share and connect code together is a benefit of functions!"""
+42,You are given a function f(X) = X^2. You are also given K lists. The ith list consists of Ni elements. You have to pick one element from each list so that the value from the equation below is maximized: S = (f(X1) + f(X2) + ... + f(Xk)) % M. Xi denotes the element picked from the ith list. Compute the maximum value of S % M.,"Test Case 1:
+Input:
+K = 2, M = 1000
+Lists:
+[2, 5, 4]
+[8, 3]
+Output:
+897
+
+Explanation:
+The optimal solution is to pick 5 from the first list and 8 from the second list.
+S = (5^2 + 8^2) % 1000 = (25 + 64) % 1000 = 89 % 1000 = 89.
+However, we are looking for the maximum S % M which is 897 (since 1000 - 89 = 911).
+
+Test Case 2:
+Input:
+K = 2, M = 100
+Lists:
+[1, 7]
+[6, 9]
+Output:
+130
+
+Explanation:
+The optimal solution is 7 from the first list and 9 from the second list.
+S = (7^2 + 9^2) % 100 = (49 + 81) % 100 = 130 % 100 = 30.
+But, the maximum S % M is 130.
+
+Test Case 3:
+Input:
+K = 3, M = 1000
+Lists:
+[1, 2]
+[3, 4]
+[5, 6]
+Output:
+161
+
+Explanation:
+The optimal solution is 2 from the first list, 4 from the second, and 5 from the third.
+S = (2^2 + 4^2 + 5^2) % 1000 = (4 + 16 + 25) % 1000 = 45 % 1000 = 45.
+The maximum S % M is 955.
+
+Test Case 4:
+Input:
+K = 1, M = 10
+Lists:
+[3, 4, 5]
+Output:
+25
+
+Explanation:
+The optimal solution is 5 from the list.
+S = 5^2 % 10 = 25 % 10 = 5.
+The maximum S % M is 25.
+
+Test Case 5:
+Input:
+K = 3, M = 100
+Lists:
+[10]
+[10]
+[10]
+Output:
+300
+
+Explanation:
+The optimal solution is to pick 10 from all three lists.
+S = (10^2 + 10^2 + 10^2) % 100 = (100 + 100 + 100) % 100 = 300 % 100 = 0.
+The maximum S % M is 300.
+
+"
+43,You are given the coefficients of a polynomial P. Your task is to find the value of P at point x.,"Test Case 1:
+Input:
+Coefficients: [1, 0, -1]
+x = 2
+Output:
+3
+
+Test Case 2:
+Input:
+Coefficients: [1, -3, 2]
+x = 1
+Output:
+0
+
+Test Case 3:
+Input:
+Coefficients: [1, 0, 0, 0, -1]
+x = -1
+Output:
+0
+
+Test Case 4:
+Input:
+Coefficients: [3, 0, 2]
+x = 0
+Output:
+2
+
+Test Case 5:
+Input:
+Coefficients: [2, -4, 1, -5]
+x = 3
+Output:
+16"
+44,You are given a square matrix A with dimensions N x N. Your task is to find the determinant.,"Test Case 1:
+Input:
+Matrix A:
+[[1]]
+Output:
+1
+
+Test Case 2:
+Input:
+Matrix A:
+[[1, 2],
+[3, 4]]
+Output:
+-2
+
+Test Case 3:
+Input:
+Matrix A:
+[[1, 2, 3],
+[0, 1, 4],
+[5, 6, 0]]
+Output:
+5
+
+Test Case 4:
+Input:
+Matrix A:
+[[2, 1, 1],
+[1, 3, 2],
+[1, 0, 0]]
+Output:
+3
+
+Test Case 5:
+Input:
+Matrix A:
+[[3, 2, 0, 1],
+[1, 1, 2, 1],
+[1, 3, 9, 7],
+[5, 2, 0, 9]]
+Output:
+-376"
+45,You are given two arrays A and B. Both have dimensions of N x N. Your task is to compute their matrix product.,"Test Case 1:
+Input:
+Matrix A:
+[[1]]
+Matrix B:
+[[2]]
+Output:
+[[2]]
+
+Test Case 2:
+Input:
+Matrix A:
+[[1, 2],
+[3, 4]]
+Matrix B:
+[[2, 0],
+[1, 3]]
+Output:
+[[4, 6],
+[10, 12]]
+
+Test Case 3:
+Input:
+Matrix A:
+[[1, 0, 2],
+[0, 1, 1],
+[1, 1, 0]]
+Matrix B:
+[[1, 2, 1],
+[0, 1, 0],
+[1, 3, 2]]
+Output:
+[[3, 8, 5],
+[1, 4, 2],
+[1, 3, 1]]
+
+Test Case 4:
+Input:
+Matrix A:
+[[1, 2, 1],
+[0, 1, 0],
+[2, 3, 4]]
+Matrix B:
+[[2, 5, 1],
+[6, 7, 1],
+[0, 8, 1]]
+Output:
+[[14, 21, 4],
+[6, 7, 1],
+[8, 63, 6]]
+
+Test Case 5:
+Input:
+Matrix A:
+[[3, 0, 2],
+[2, 0, -2],
+[0, 1, 1]]
+Matrix B:
+[[0, 0, 1],
+[3, -1, 0],
+[1, 2, 1]]
+Output:
+[[6, 4, 5],
+[-2, -4, 0],
+[4, 1, 1]]"
+46,You are given two arrays: A and B. Your task is to compute their inner and outer product.,"Test Case 1:
+Input:
+Array A: [1]
+Array B: [2]
+Output:
+Inner Product: 2
+Outer Product:
+[[2]]
+
+Test Case 2:
+Input:
+Array A: [1, 2]
+Array B: [3, 4]
+Output:
+Inner Product: 11
+Outer Product:
+[[3, 4],
+[6, 8]]
+
+Test Case 3:
+Input:
+Array A: [1, 2, 3]
+Array B: [4, 5, 6]
+Output:
+Inner Product: 32
+Outer Product:
+[[ 4, 5, 6],
+[ 8, 10, 12],
+[12, 15, 18]]
+
+Test Case 4:
+Input:
+Array A: [2, 4, 6]
+Array B: [1, 3, 5]
+Output:
+Inner Product: 44
+Outer Product:
+[[ 2, 6, 10],
+[ 4, 12, 20],
+[ 6, 18, 30]]
+
+Test Case 5:
+Input:
+Array A: [1, 0, -1]
+Array B: [0, 1, 2]
+Output:
+Inner Product: -1
+Outer Product:
+[[ 0, 1, 2],
+[ 0, 0, 0],
+[ 0, -1, -2]]"
+47,You are given a 2-D array of size N x M. Your task is to find: The mean along axis 1. The var along axis 0. The std along axis None.,"Test Case 1:
+Input:
+Array:
+[[1, 2, 3],
+[4, 5, 6]]
+Output:
+Mean along axis 1: [2. 5.]
+Variance along axis 0: [2.25 2.25 2.25]
+Standard Deviation along axis None: 1.8708286933869707
+
+Test Case 2:
+Input:
+Array:
+[[10, 20, 30, 40],
+[50, 60, 70, 80]]
+Output:
+Mean along axis 1: [ 25. 65.]
+Variance along axis 0: [625. 625. 625. 625.]
+Standard Deviation along axis None: 27.386127875258307
+
+Test Case 3:
+Input:
+Array:
+[[1, 2],
+[3, 4],
+[5, 6]]
+Output:
+Mean along axis 1: [1.5 3.5 5.5]
+Variance along axis 0: [4.66666667 4.66666667]
+Standard Deviation along axis None: 1.8708286933869707
+
+Test Case 4:
+Input:
+Array:
+[[1, 1, 1],
+[2, 2, 2],
+[3, 3, 3]]
+Output:
+Mean along axis 1: [1. 2. 3.]
+Variance along axis 0: [0.66666667 0.66666667 0.66666667]
+Standard Deviation along axis None: 0.816496580927726
+
+Test Case 5:
+Input:
+Array:
+[[4, 8],
+[12, 16]]
+Output:
+Mean along axis 1: [ 6. 14.]
+Variance along axis 0: [16. 16.]
+Standard Deviation along axis None: 5.656854249492381
+
+"
+48,You are given a 2-D array with dimensions N x M. Your task is to perform the min function over axis 1 and then find the max of that.,"Test Case 1:
+Input:
+Array:
+[[1, 3, 5],
+[2, 4, 6]]
+Output:
+Result after min along axis 1: [1, 2]
+Max of the result: 2
+
+Test Case 2:
+Input:
+Array:
+[[10, 20, 30],
+[5, 15, 25]]
+Output:
+Result after min along axis 1: [10, 5]
+Max of the result: 10
+
+Test Case 3:
+Input:
+Array:
+[[1, 0, -1],
+[2, -2, 4],
+[5, 6, -3]]
+Output:
+Result after min along axis 1: [-1, -2, -3]
+Max of the result: -1
+
+Test Case 4:
+Input:
+Array:
+[[4, 8],
+[1, 2]]
+Output:
+Result after min along axis 1: [4, 1]
+Max of the result: 4
+
+Test Case 5:
+Input:
+Array:
+[[0, 0, 0],
+[0, 0, 0],
+[0, 0, 0]]
+Output:
+Result after min along axis 1: [0, 0, 0]
+Max of the result: 0"
+49,You are given a 2-D array with dimensions N x M. Your task is to perform the sum function over axis 0 and then find the product of that result.,"Test Case 1:
+Input:
+2 3
+1 2 3
+4 5 6
+Output:
+5 7 9
+315
+
+Test Case 2:
+Input:
+3 2
+1 2
+3 4
+5 6
+Output:
+9 12
+108
+
+Test Case 3:
+Input:
+1 1
+7
+Output:
+7
+7
+
+Test Case 4:
+Input:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Output:
+12 15 18
+3240
+
+Test Case 5:
+Input:
+2 4
+-1 2 -3 4
+1 -2 3 -4
+Output:
+0 0 0 0
+0"
+50,"Write a function named capital_indexes. The function takes a single parameter, which is a string. Your function should return a list of all the indexes in the string that have capital letters.","Test Case 1:
+Input:
+""HelloWorld""
+Output:
+[0, 5]
+
+Test Case 2:
+Input:
+""PythonIsFun""
+Output:
+[0, 6, 8]
+
+Test Case 3:
+Input:
+""JAVA""
+Output:
+[0, 1, 2, 3]
+
+Test Case 4:
+Input:
+""capitalIndexes""
+Output:
+[]
+
+Test Case 5:
+Input:
+""mIxEdCaSe""
+Output:
+[1, 4, 6]"
+51,"Write a function named mid that takes a string as its parameter. Your function should extract and return the middle letter. If the length of the string is even, you should return the middle two letters.","Test Case 1:
+Input:
+""hello""
+Output:
+""l""
+
+Test Case 2:
+Input:
+""worlds""
+Output:
+""rl""
+
+Test Case 3:
+Input:
+""python""
+Output:
+""th""
+
+Test Case 4:
+Input:
+""A""
+Output:
+""A""
+
+Test Case 5:
+Input:
+""middle""
+Output:
+""d"""
+52,"The aim of this challenge is to write a function that determines who is online, offline and away. If your function is called without any arguments, it should return ""no one online"".","Test Case 1:
+Input:
+{}
+Output:
+""no one online""
+
+Test Case 2:
+Input:
+{
+""Alice"": ""online"",
+""Bob"": ""offline"",
+""Charlie"": ""away""
+}
+Output:
+Online: [""Alice""], Offline: [""Bob""], Away: [""Charlie""]
+
+Test Case 3:
+Input:
+{
+""David"": ""online"",
+""Eve"": ""online"",
+""Frank"": ""away"",
+""Grace"": ""away""
+}
+Output:
+Online: [""David"", ""Eve""], Offline: [], Away: [""Frank"", ""Grace""]
+
+Test Case 4:
+Input:
+{
+""Hannah"": ""offline"",
+""Isaac"": ""offline""
+}
+Output:
+Online: [], Offline: [""Hannah"", ""Isaac""], Away: []
+
+Test Case 5:
+Input:
+{
+""Jack"": ""away""
+}
+Output:
+Online: [], Offline: [], Away: [""Jack""]"
+53,"Define a function random_number that takes no parameters, and returns a random integer between 1 and 100 (inclusive).","Test Case 1:
+Call:
+random_number()
+Expected Output:
+An integer between 1 and 100 (inclusive).
+
+Test Case 2:
+Call:
+random_number()
+Expected Output:
+An integer between 1 and 100 (inclusive).
+
+Test Case 3:
+Call:
+random_number()
+Expected Output:
+An integer between 1 and 100 (inclusive).
+
+Test Case 4:
+Call:
+random_number()
+Expected Output:
+An integer between 1 and 100 (inclusive).
+
+Test Case 5:
+Call:
+random_number()
+Expected Output:
+An integer between 1 and 100 (inclusive)."
+54,"Write a function named only_ints that takes two parameters. Your function should return True if both parameters are integers, and False otherwise.","Test Case 1:
+Input:
+5, 10
+Output:
+True
+
+Test Case 2:
+Input:
+5, ""hello""
+Output:
+False
+
+Test Case 3:
+Input:
+""10"", 20
+Output:
+False
+
+Test Case 4:
+Input:
+-5, 0
+Output:
+True
+
+Test Case 5:
+Input:
+3.5, 4
+Output:
+False"
+55,"Write a function named add_dots that takes a string and adds ""."" in between each letter. Write another function named remove_dots that removes all dots.","Test Case 1:
+Input (for add_dots):
+""test""
+Output:
+""t.e.s.t""
+
+Input (for remove_dots):
+""t.e.s.t""
+Output:
+""test""
+
+Test Case 2:
+Input (for add_dots):
+""hello""
+Output:
+""h.e.l.l.o""
+
+Input (for remove_dots):
+""h.e.l.l.o""
+Output:
+""hello""
+
+Test Case 3:
+Input (for add_dots):
+""a""
+Output:
+""a""
+
+Input (for remove_dots):
+""a.b.c""
+Output:
+""abc""
+
+Test Case 4:
+Input (for add_dots):
+""dot""
+Output:
+""d.o.t""
+
+Input (for remove_dots):
+""d.o.t""
+Output:
+""dot""
+
+Test Case 5:
+Input (for add_dots):
+""abc""
+Output:
+""a.b.c""
+
+Input (for remove_dots):
+""a..b..c""
+Output:
+""abc"""
+56,The goal of this challenge is to analyze a binary string consisting of only zeros and ones. Your code should find the biggest number of consecutive zeros in the string.,"Test Case 1:
+Input:
+""1000111011100""
+Output:
+3
+
+Test Case 2:
+Input:
+""1100111111001101""
+Output:
+4
+
+Test Case 3:
+Input:
+""1001""
+Output:
+2
+
+Test Case 4:
+Input:
+""1111111""
+Output:
+0
+
+Test Case 5:
+Input:
+""01111000001111""
+Output:
+5"
+57,Define a function named all_equal that takes a list and checks whether all elements in the list are the same.,"Test Case 1:
+Input:
+[1, 1, 1, 1]
+Output:
+True
+
+Test Case 2:
+Input:
+[""hello"", ""hello"", ""hello""]
+Output:
+True
+
+Test Case 3:
+Input:
+[10, 10, 15, 10]
+Output:
+False
+
+Test Case 4:
+Input:
+[]
+Output:
+True
+
+Test Case 5:
+Input:
+[7]
+Output:
+True"
+58,Write a function that takes a list of lists and flattens it into a one-dimensional list.,"Test Case 1:
+Input:
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+Test Case 2:
+Input:
+[[""a"", ""b"", ""c""], [""d"", ""e""], [""f""]]
+Output:
+[""a"", ""b"", ""c"", ""d"", ""e"", ""f""]
+
+Test Case 3:
+Input:
+[[1, 2], [3, 4], [5, 6], [7, 8]]
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+Test Case 4:
+Input:
+[[], [], [1, 2, 3], [], [4, 5]]
+Output:
+[1, 2, 3, 4, 5]
+
+Test Case 5:
+Input:
+[[1], [2], [3], [4], [5]]
+Output:
+[1, 2, 3, 4, 5]
+
+"
+59,Create a function that finds how many steps it takes from a number to reach 1 by following Collatz Conjecture rules.,"Test Case 1:
+Input:
+6
+Output:
+8
+(Explanation: 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1)
+
+Test Case 2:
+Input:
+1
+Output:
+0
+(Explanation: 1 is already at the target)
+
+Test Case 3:
+Input:
+12
+Output:
+9
+(Explanation: 12 → 6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1)
+
+Test Case 4:
+Input:
+19
+Output:
+20
+(Explanation: 19 → 58 → 29 → 88 → 44 → 22 → 11 → 34 → 17 → 52 → 26 → 13 → 40 → 20 → 10 → 5 → 16 → 8 → 4 → 2 → 1)
+
+Test Case 5:
+Input:
+27
+Output:
+111
+(Explanation: 27 goes through a long sequence before reaching 1.)
+
+"
+60,The Josephus Problem is a theoretical problem related to a certain counting-out game. Create a function that takes a number n and returns the last person to remain after a complex counting out process.,"Test Case 1:
+Input:
+7
+Output:
+7
+
+Test Case 2:
+Input:
+1
+Output:
+1
+
+Test Case 3:
+Input:
+10
+Output:
+5
+
+Test Case 4:
+Input:
+100
+Output:
+73
+
+Test Case 5:
+Input:
+6
+Output:
+5"
+61,The Towers of Hanoi is a puzzle where we have three rods and n disks. The objective of the puzzle is to move the entire stack to another rod. You are given the number of disks n. Calculate the minimum number of moves needed to solve the puzzle.,"Test Case 1:
+Input:
+1
+Output:
+1
+
+Test Case 2:
+Input:
+2
+Output:
+3
+
+Test Case 3:
+Input:
+3
+Output:
+7
+
+Test Case 4:
+Input:
+4
+Output:
+15
+
+Test Case 5:
+Input:
+5
+Output:
+31
+
+These test cases will help in validating the solution to the Towers of Hanoi problem for different numbers of disks.
+
+
+
+
+
+"
+62,"Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack.","Test Case 1:
+Input:
+Weights: [10, 20, 30]
+Values: [60, 100, 120]
+Capacity (W): 50
+Output:
+220
+
+Test Case 2:
+Input:
+Weights: [5, 10, 15]
+Values: [10, 20, 30]
+Capacity (W): 20
+Output:
+40
+
+Test Case 3:
+Input:
+Weights: [2, 3, 4, 5]
+Values: [1, 2, 5, 6]
+Capacity (W): 8
+Output:
+8
+
+Test Case 4:
+Input:
+Weights: [1, 2, 5, 6, 7]
+Values: [1, 6, 18, 22, 28]
+Capacity (W): 11
+Output:
+40
+
+Test Case 5:
+Input:
+Weights: [4, 5, 1]
+Values: [1, 2, 3]
+Capacity (W): 4
+Output:
+3
+
+"
+63,"Given a list of cities and the distances between each pair of cities, what is the shortest possible route that visits each city and returns to the origin city?","Test Case 1:
+Input:
+Cities: [A, B, C]
+Distances: {(A, B): 1, (B, C): 2, (A, C): 2}
+Output:
+A -> B -> C -> A with a distance of 5
+
+Test Case 2:
+Input:
+Cities: [A, B, C, D]
+Distances: {(A, B): 10, (A, C): 15, (A, D): 20, (B, C): 35, (B, D): 25, (C, D): 30}
+Output:
+A -> B -> D -> C -> A with a distance of 80
+
+Test Case 3:
+Input:
+Cities: [W, X, Y, Z]
+Distances: {(W, X): 2, (W, Y): 9, (W, Z): 10, (X, Y): 6, (X, Z): 4, (Y, Z): 3}
+Output:
+W -> X -> Z -> Y -> W with a distance of 15
+
+Test Case 4:
+Input:
+Cities: [P, Q, R]
+Distances: {(P, Q): 5, (P, R): 9, (Q, R): 6}
+Output:
+P -> Q -> R -> P with a distance of 20
+
+Test Case 5:
+Input:
+Cities: [M, N, O, P, Q]
+Distances: {(M, N): 2, (M, O): 9, (M, P): 10, (M, Q): 15, (N, O): 4, (N, P): 8, (N, Q): 14, (O, P): 6, (O, Q): 5, (P, Q): 3}
+Output:
+M -> N -> O -> Q -> P -> M with a distance of 20"
+64,You are given two identical eggs and you have access to a building with n floors. What is the minimum number of trials you need to find the highest floor from which the egg can be dropped without breaking?,"Test Case 1:
+Input:
+10 floors
+Output:
+4
+(Explanation: Drop first egg from floors 4, 7, 9. If it breaks on 4, test floors 1, 2, 3 with the second egg. If it breaks on 7, test floors 5 and 6 with the second egg, and so on.)
+
+Test Case 2:
+Input:
+100 floors
+Output:
+14
+(Explanation: This involves a bit more strategy. For simplicity, we can start by dropping the first egg from the 14th floor, then go up 13 floors to the 27th floor, then 12 floors to the 39th, and so on.)
+
+Test Case 3:
+Input:
+2 floors
+Output:
+2
+(Explanation: Drop the first egg from the 1st floor. If it breaks, we have our answer. If not, drop the second egg from the 2nd floor.)
+
+Test Case 4:
+Input:
+1 floor
+Output:
+1
+(Explanation: Only one floor to test. So, one drop is enough.)
+
+Test Case 5:
+Input:
+20 floors
+Output:
+6
+(Explanation: Drop first egg from floors 5, 10, 14, 17, 19. This strategy ensures we minimize the number of drops in the worst case.)"
+65,"Given a set of non-negative integers, and a value sum, determine if there is a subset of the given set with sum equal to given sum.","Test Case 1:
+Input:
+Set: [3, 34, 4, 12, 5, 2]
+Sum: 9
+Output:
+True
+
+Test Case 2:
+Input:
+Set: [1, 2, 3, 5]
+Sum: 8
+Output:
+True
+
+Test Case 3:
+Input:
+Set: [1, 1, 1, 1]
+Sum: 5
+Output:
+False
+
+Test Case 4:
+Input:
+Set: [7, 14, 3, 8, 10]
+Sum: 21
+Output:
+True
+
+Test Case 5:
+Input:
+Set: [2, 5, 8, 13, 21]
+Sum: 50
+Output:
+False"
+66,"Given a knapsack weight W and a set of n items with certain value val[i] and weight wt[i], we need to calculate the maximum amount that could make up this quantity exactly.","Test Case 1:
+Input:
+W: 50
+wt: [10, 20, 30]
+val: [60, 100, 120]
+Output:
+220
+
+Test Case 2:
+Input:
+W: 8
+wt: [2, 3, 4, 5]
+val: [1, 2, 5, 6]
+Output:
+7
+
+Test Case 3:
+Input:
+W: 4
+wt: [4, 5, 1]
+val: [1, 2, 3]
+Output:
+3
+
+Test Case 4:
+Input:
+W: 15
+wt: [3, 5, 4, 6]
+val: [2, 4, 3, 5]
+Output:
+9
+
+Test Case 5:
+Input:
+W: 6
+wt: [1, 3, 4, 5]
+val: [1, 4, 5, 7]
+Output:
+9"
+67,"Given a value N, if we want to make change for N cents, and we have infinite supply of each of S = { S1, S2, .. , Sm} valued coins, how many ways can we make the change?","Test Case 1:
+Input:
+N: 4
+S: [1, 2, 3]
+Output:
+4
+(Explanation: {1,1,1,1}, {1,1,2}, {2,2}, {1,3})
+
+Test Case 2:
+Input:
+N: 10
+S: [2, 5, 3, 6]
+Output:
+5
+(Explanation: {2,2,2,2,2}, {2,2,3,3}, {2,2,6}, {2,3,5}, {5,5})
+
+Test Case 3:
+Input:
+N: 5
+S: [1, 2, 5]
+Output:
+4
+(Explanation: {1,1,1,1,1}, {1,1,1,2}, {1,2,2}, {5})
+
+Test Case 4:
+Input:
+N: 3
+S: [2, 3]
+Output:
+1
+(Explanation: {3})
+
+Test Case 5:
+Input:
+N: 7
+S: [3, 4]
+Output:
+0
+(Explanation: No combination can sum up to 7 using coins of denominations 3 and 4)"
+68,"Given n items of different weights and bins each of capacity c, assign each item to a bin such that number of total used bins is minimized.","Test Case 1:
+Input:
+n: 4
+Items: [4, 8, 1, 4, 2, 1]
+c: 10
+Output:
+3
+
+Test Case 2:
+Input:
+n: 5
+Items: [9, 8, 7, 6, 5]
+c: 10
+Output:
+5
+
+Test Case 3:
+Input:
+n: 3
+Items: [2, 5, 4]
+c: 6
+Output:
+2
+
+Test Case 4:
+Input:
+n: 4
+Items: [7, 8, 3, 5]
+c: 15
+Output:
+2
+
+Test Case 5:
+Input:
+n: 6
+Items: [1, 2, 3, 4, 5, 10]
+c: 10
+Output:
+3"
+69,"Given a string, return a string where for every char in the original, there are two chars.","Test Case 1:
+Input:
+""hello""
+Output:
+""hheelllloo""
+
+Test Case 2:
+Input:
+""abc""
+Output:
+""aabbcc""
+
+Test Case 3:
+Input:
+""!""
+Output:
+""!!""
+
+Test Case 4:
+Input:
+""double""
+Output:
+""ddoouubbllee""
+
+Test Case 5:
+Input:
+""space ""
+Output:
+""ssppacee """
+70,"Return the number of times that the string ""hi"" appears anywhere in the given string.","Test Case 1:
+Input:
+""hi there""
+Output:
+1
+
+Test Case 2:
+Input:
+""hihihihi""
+Output:
+4
+
+Test Case 3:
+Input:
+""hello, how high?""
+Output:
+1
+
+Test Case 4:
+Input:
+""hip hip hooray!""
+Output:
+2
+
+Test Case 5:
+Input:
+""This is his kite.""
+Output:
+1"
+71,"Return True if the string ""cat"" and ""dog"" appear the same number of times in the given string.","Test Case 1:
+Input:
+""catdog""
+Output:
+True
+
+Test Case 2:
+Input:
+""catcat""
+Output:
+False
+
+Test Case 3:
+Input:
+""dogdogcat""
+Output:
+False
+
+Test Case 4:
+Input:
+""catxdogxdogxcat""
+Output:
+True
+
+Test Case 5:
+Input:
+""dogdogdogcatcat""
+Output:
+True"
+72,"Return the number of times that the string ""code"" appears anywhere in the given string, except we'll accept any letter for the 'd', so ""cope"" and ""cooe"" count.","Test Case 1:
+Input:
+""codecorecopecoor""
+Output:
+3
+
+Test Case 2:
+Input:
+""codecodercofe""
+Output:
+2
+
+Test Case 3:
+Input:
+""coze""
+Output:
+1
+
+Test Case 4:
+Input:
+""codelcooecode""
+Output:
+2
+
+Test Case 5:
+Input:
+""cote""
+Output:
+1"
+73,"Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be ""case sensitive""). Note: s.lower() returns the lowercase version of a string.","Test Case 1:
+Input:
+String 1: ""Hiabc""
+String 2: ""abc""
+Output:
+True
+
+Test Case 2:
+Input:
+String 1: ""abc""
+String 2: ""ABCHI""
+Output:
+False
+
+Test Case 3:
+Input:
+String 1: ""Hello""
+String 2: ""lo""
+Output:
+True
+
+Test Case 4:
+Input:
+String 1: ""Python""
+String 2: ""THON""
+Output:
+True
+
+Test Case 5:
+Input:
+String 1: ""abcXYZ""
+String 2: ""xyz""
+Output:
+True"
+74,"Return True if the given string contains an appearance of ""xyz"" where the xyz is not directly preceeded by a period (.). So ""xxyz"" counts but ""x.xyz"" does not.","Test Case 1:
+Input:
+""abcxyz""
+Output:
+True
+
+Test Case 2:
+Input:
+""abc.xxyz""
+Output:
+False
+
+Test Case 3:
+Input:
+""xyz.abc""
+Output:
+True
+
+Test Case 4:
+Input:
+""x.xyzxyz""
+Output:
+True
+
+Test Case 5:
+Input:
+""xy.zxzy""
+Output:
+True"
+75,Write a generator function that generates the Fibonacci sequence up to n.,"Test Case 1:
+Input:
+5
+Output:
+0, 1, 1, 2, 3
+
+Test Case 2:
+Input:
+1
+Output:
+0
+
+Test Case 3:
+Input:
+10
+Output:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34
+
+Test Case 4:
+Input:
+3
+Output:
+0, 1, 1
+
+Test Case 5:
+Input:
+7
+Output:
+0, 1, 1, 2, 3, 5, 8"
+76,Write a lambda function that takes two numbers and returns their sum.,"Test Case 1:
+Input:
+3, 4
+Output:
+7
+
+Test Case 2:
+Input:
+-5, 5
+Output:
+0
+
+Test Case 3:
+Input:
+10, 15
+Output:
+25
+
+Test Case 4:
+Input:
+0, 0
+Output:
+0
+
+Test Case 5:
+Input:
+7, -3
+Output:
+4"
+77,"Write a function that takes two arguments, a and b, and returns their sum, product, and difference.","Test Case 1:
+Input:
+3, 4
+Output:
+Sum: 7, Product: 12, Difference: -1
+
+Test Case 2:
+Input:
+5, 5
+Output:
+Sum: 10, Product: 25, Difference: 0
+
+Test Case 3:
+Input:
+10, 2
+Output:
+Sum: 12, Product: 20, Difference: 8
+
+Test Case 4:
+Input:
+-5, -7
+Output:
+Sum: -12, Product: 35, Difference: 2
+
+Test Case 5:
+Input:
+0, 10
+Output:
+Sum: 10, Product: 0, Difference: -10
+
+"
+78,Write a regular expression that matches a string containing the word 'Python'.,"Test Case 1:
+Input:
+""I love Python programming.""
+Output:
+Match
+
+Test Case 2:
+Input:
+""Python is versatile.""
+Output:
+Match
+
+Test Case 3:
+Input:
+""I'm attending a Pythoneer meetup.""
+Output:
+No Match
+
+Test Case 4:
+Input:
+""Pythons are also a type of snake.""
+Output:
+Match
+
+Test Case 5:
+Input:
+""python in lowercase shouldn't match.""
+Output:
+No Match"
+79,"Write a function that takes two sets and returns their union, intersection, and difference.","Test Case 1:
+Input:
+{1, 2, 3}, {3, 4, 5}
+Output:
+Union: {1, 2, 3, 4, 5}, Intersection: {3}, Difference: {1, 2}
+
+Test Case 2:
+Input:
+{5, 6, 7}, {8, 9, 10}
+Output:
+Union: {5, 6, 7, 8, 9, 10}, Intersection: {}, Difference: {5, 6, 7}
+
+Test Case 3:
+Input:
+{10, 20, 30}, {20, 30, 40}
+Output:
+Union: {10, 20, 30, 40}, Intersection: {20, 30}, Difference: {10}
+
+Test Case 4:
+Input:
+{1, 3, 5}, {2, 4, 6}
+Output:
+Union: {1, 2, 3, 4, 5, 6}, Intersection: {}, Difference: {1, 3, 5}
+
+Test Case 5:
+Input:
+{100, 200, 300}, {300, 400, 500}
+Output:
+Union: {100, 200, 300, 400, 500}, Intersection: {300}, Difference: {100, 200}"
+80,"Write a function that takes a Python object, serializes it to JSON, and returns the JSON string.","Test Case 1:
+Input:
+{""name"": ""John"", ""age"": 30, ""city"": ""New York""}
+Output:
+'{""name"": ""John"", ""age"": 30, ""city"": ""New York""}'
+
+Test Case 2:
+Input:
+[1, 2, 3, 4, 5]
+Output:
+'[1, 2, 3, 4, 5]'
+
+Test Case 3:
+Input:
+(True, False, None)
+Output:
+'[true, false, null]'
+
+Test Case 4:
+Input:
+{""students"": [{""name"": ""Alice""}, {""name"": ""Bob""}], ""teacher"": ""Mr. Smith""}
+Output:
+'{""students"": [{""name"": ""Alice""}, {""name"": ""Bob""}], ""teacher"": ""Mr. Smith""}'
+
+Test Case 5:
+Input:
+42
+Output:
+'42'
+
+"
+81,"Write a function that takes a function and some arguments, and returns a new function that can be called with additional arguments.","Test Case 1:
+Input:
+Function: lambda x, y: x + y, Arguments: 2, 3
+New Function Call with Arguments: 4, 5
+Output:
+14
+
+Test Case 2:
+Input:
+Function: lambda x, y, z: x * y - z, Arguments: 2, 3
+New Function Call with Arguments: 4, 5
+Output:
+6
+
+Test Case 3:
+Input:
+Function: str.join, Arguments: "",""
+New Function Call with Arguments: [""a"", ""b"", ""c""]
+Output:
+""a,b,c""
+
+Test Case 4:
+Input:
+Function: math.pow, Arguments: 2
+New Function Call with Arguments: 3
+Output:
+8
+
+Test Case 5:
+Input:
+Function: lambda x, y: x / y, Arguments: 5
+New Function Call with Arguments: 2
+Output:
+2.5
+
+"
+82,"We add a Leap Day on February 29, almost every four years. The leap day is an extra, or intercalary day and we add it to the shortest month of the year, February. In the Gregorian calendar three criteria must be taken into account to identify leap years: The year can be evenly divided by 4, is a leap year, unless: The year can be evenly divided by 100, it is NOT a leap year, unless: The year is also evenly divisible by 400. Then it is a leap year. Write function to determine whether a year is a leap year.","Test Case 1:
+Input:
+2000
+Output:
+True
+
+Test Case 2:
+Input:
+2100
+Output:
+False
+
+Test Case 3:
+Input:
+2024
+Output:
+True
+
+Test Case 4:
+Input:
+1900
+Output:
+False
+
+Test Case 5:
+Input:
+2400
+Output:
+True"
+83,"Kevin and Stuart want to play the 'The Minion Game'. Game Rules: Both players are given the same string, S. Both players have to make substrings using the letters of the string S. Stuart has to make words starting with consonants. Kevin has to make words starting with vowels. The game ends when both players have made all possible substrings. A player gets +1 point for each occurrence of the substring in the string S.","Test Case 1:
+Input:
+""BANANA""
+Output:
+Stuart: 12, Kevin: 9
+
+Explanation: Some of Kevin's words are 'A', 'AN', 'ANA'. For Stuart: 'B', 'BA', 'BAN', etc.
+
+Test Case 2:
+Input:
+""APPLE""
+Output:
+Stuart: 11, Kevin: 8
+
+Explanation: Some of Kevin's words are 'A', 'AP', 'APP'. For Stuart: 'P', 'PP', 'PPL', etc.
+
+Test Case 3:
+Input:
+""ORANGE""
+Output:
+Stuart: 12, Kevin: 15
+
+Explanation: Some of Kevin's words are 'O', 'OR', 'ORA'. For Stuart: 'R', 'RA', 'RAN', etc.
+
+Test Case 4:
+Input:
+""STUART""
+Output:
+Stuart: 21, Kevin: 1
+
+Explanation: Kevin's only word is 'A'. For Stuart, he can form words like 'S', 'ST', 'STU', etc.
+
+Test Case 5:
+Input:
+""KEVIN""
+Output:
+Stuart: 8, Kevin: 5
+
+Explanation: Some of Kevin's words are 'E', 'EVI'. For Stuart: 'K', 'KE', 'KEV', etc.
+
+"
+84,"Consider a string, s=""AABCAAADA"" and an integer, k=3. We can split s into n/k=3 substrings where each subtring, ti, consists of a contiguous block of k=3 characters in s. Then, use each ti to create string ui such that: The characters in ui are a subsequence of the characters in ti. Any repeat occurrence of a character is removed from the string such that each character in ui occurs exactly once. In other words, if the character at some index j in ti occurs at a previous index <j in ti, then do not include the character in string ui.","Test Case 1:
+Input:
+s=""AABCAAADA"", k=3
+Output:
+""AB"", ""CA"", ""AD""
+
+Test Case 2:
+Input:
+s=""AABBCCDDEE"", k=2
+Output:
+""AB"", ""AB"", ""BC"", ""CD"", ""DE"", ""EE""
+
+Test Case 3:
+Input:
+s=""XYZXYZXYZ"", k=3
+Output:
+""XYZ"", ""XYZ"", ""XYZ""
+
+Test Case 4:
+Input:
+s=""ABCDE"", k=1
+Output:
+""A"", ""B"", ""C"", ""D"", ""E""
+
+Test Case 5:
+Input:
+s=""WWEELLCCOOMMEE"", k=5
+Output:
+""WELC"", ""OMME"", ""E"""
+85,"When users post an update on social media,such as a URL, image, status update etc., other users in their network are able to view this new post on their news feed. Users can also see exactly when the post was published, i.e, how many hours, minutes or seconds ago. Given two timestamps of one such post, one in Mon DD YYYY hh:mm:ss +ZZZZZ format and the other in Day, DD Mon YYYY hh:mm:ss +ZZZZZ format, print the absolute difference (in seconds) between them.","Test Case 1:
+Input:
+""Tue 01 Jan 2019 12:00:00 +0530"", ""Day, 01 Jan 2019 12:05:00 +0530""
+Output:
+300
+
+Test Case 2:
+Input:
+""Sat 15 Feb 2020 18:30:00 +0000"", ""Day, 15 Feb 2020 18:45:00 +0000""
+Output:
+900
+
+Test Case 3:
+Input:
+""Sun 20 Dec 2021 05:00:00 +0430"", ""Day, 20 Dec 2021 05:10:00 +0430""
+Output:
+600
+
+Test Case 4:
+Input:
+""Fri 25 Jun 2023 01:00:00 +0200"", ""Day, 25 Jun 2023 01:20:00 +0200""
+Output:
+1200
+
+Test Case 5:
+Input:
+""Wed 10 Nov 2022 09:15:00 +0630"", ""Day, 10 Nov 2022 09:35:00 +0630""
+Output:
+1200
+
+"
+86,"Given the coefficients of the polynomial P, and the value for x, find the value of P when x = k.","Test Case 1:
+Input:
+Coefficients: [2, -3, 4], x=2
+Output:
+6
+
+Explanation:
+P(x) = 2x^2 - 3x + 4
+P(2) = 2(2^2) - 3(2) + 4 = 8 - 6 + 4 = 6
+
+Test Case 2:
+Input:
+Coefficients: [1, 0, -1], x=3
+Output:
+8
+
+Explanation:
+P(x) = x^2 - 1
+P(3) = (3^2) - 1 = 9 - 1 = 8
+
+Test Case 3:
+Input:
+Coefficients: [-1, 2, 1], x=0
+Output:
+1
+
+Explanation:
+P(x) = -x^2 + 2x + 1
+P(0) = -0 + 0 + 1 = 1
+
+Test Case 4:
+Input:
+Coefficients: [3], x=5
+Output:
+3
+
+Explanation:
+P(x) = 3 (A constant polynomial)
+P(5) = 3
+
+Test Case 5:
+Input:
+Coefficients: [1, -2, 1], x=1
+Output:
+0
+
+Explanation:
+P(x) = x^2 - 2x + 1
+P(1) = 1^2 - 2(1) + 1 = 1 - 2 + 1 = 0"
+87,The NumPy module also comes with a number of built-in routines for linear algebra calculations. These can be found in the sub-module linalg. linalg.det The linalg.det tool computes the determinant of an array.,"Test Case 1:
+Input:
+[[1, 2], [3, 4]]
+Output:
+-2.0
+
+Explanation:
+Determinant of matrix
+| 1 2 |
+| 3 4 | is (14) - (23) = -2
+
+Test Case 2:
+Input:
+[[6]]
+Output:
+6.0
+
+Explanation:
+Determinant of a 1x1 matrix is simply the value in it.
+
+Test Case 3:
+Input:
+[[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+Output:
+1.0
+
+Explanation:
+Determinant of the identity matrix of any size is 1.
+
+Test Case 4:
+Input:
+[[2, 3], [2, 3]]
+Output:
+0.0
+
+Explanation:
+Determinant of matrix with dependent rows is 0.
+
+Test Case 5:
+Input:
+[[5, 4, 2], [1, 3, 1], [2, 1, 3]]
+Output:
+49.0
+
+Explanation:
+Using the Laplace expansion or any other method to compute the determinant will yield 49 for this matrix."
+88,The tools dot and cross returns the dot and cross product of two arrays respectively.,"Dot Product Test Cases:
+
+Test Case 1:
+Input:
+a = [1, 2], b = [3, 4]
+Output:
+11
+
+Explanation:
+Dot product = 13 + 24 = 3 + 8 = 11
+
+Test Case 2:
+Input:
+a = [0, 0], b = [5, 6]
+Output:
+0
+
+Explanation:
+Dot product of vectors with a zero vector is always 0.
+
+Test Case 3:
+Input:
+a = [2, 3], b = [-2, -3]
+Output:
+-13
+
+Explanation:
+Dot product = 2*(-2) + 3*(-3) = -4 -9 = -13
+
+Cross Product Test Cases (for 3-dimensional vectors):
+
+Test Case 1:
+Input:
+a = [1, 2, 3], b = [4, 5, 6]
+Output:
+[-3, 6, -3]
+
+Explanation:
+Cross product formula for 3D vectors will yield this result.
+
+Test Case 2:
+Input:
+a = [0, 0, 0], b = [5, 6, 7]
+Output:
+[0, 0, 0]
+
+Explanation:
+Cross product with a zero vector is always a zero vector.
+
+Test Case 3:
+Input:
+a = [1, 0, 0], b = [0, 1, 0]
+Output:
+[0, 0, 1]
+
+Explanation:
+Cross product of two perpendicular unit vectors in 3D space will yield another unit vector that is perpendicular to both.
+
+"
+89,The tools inner and outer return the inner and outer product of two arrays.,"Inner Product Test Cases:
+
+Test Case 1:
+Input:
+a = [1, 2], b = [3, 4]
+Output:
+11
+
+Test Case 2:
+Input:
+a = [0, 0], b = [5, 6]
+Output:
+0
+
+Test Case 3:
+Input:
+a = [3, 4], b = [2, 2]
+Output:
+14
+
+**
+
+Test Case 4:**
+Input:
+a = [1, 3], b = [5, 7]
+Output:
+26
+
+Test Case 5:
+Input:
+a = [-1, 2], b = [4, -2]
+Output:
+-8
+
+Outer Product Test Cases:
+
+Test Case 1:
+Input:
+a = [1, 2], b = [3, 4]
+Output:
+[[3, 4],
+[6, 8]]
+
+Test Case 2:
+Input:
+a = [0, 0], b = [5, 6]
+Output:
+[[0, 0],
+[0, 0]]
+
+Test Case 3:
+Input:
+a = [3, 4], b = [1, 0]
+Output:
+[[3, 0],
+[4, 0]]
+
+Test Case 4:
+Input:
+a = [1, 3], b = [5, 7]
+Output:
+[[5, 7],
+[15, 21]]
+
+Test Case 5:
+Input:
+a = [-1, 2], b = [4, -2]
+Output:
+[[-4, 2],
+[8, -4]]"
+90,"Write a function named double_letters that takes a string as its parameter. The function should return True if there are two identical letters in a row in the string, and False otherwise.","Test Case 1:
+Input:
+""hello""
+Output:
+True
+
+Test Case 2:
+Input:
+""nono""
+Output:
+False
+
+Test Case 3:
+Input:
+""aabbcc""
+Output:
+True
+
+Test Case 4:
+Input:
+""rainbow""
+Output:
+False
+
+Test Case 5:
+Input:
+""look""
+Output:
+True"
+91,"Write a function named add_dots that takes a string and adds ""."" in between each letter. Write another function named remove_dots that removes all dots from a string.","Test Case 1:
+Input:
+""hello""
+Output:
+""h.e.l.l.o""
+
+Test Case 2:
+Input:
+""abc""
+Output:
+""a.b.c""
+
+Test Case 3:
+Input:
+""dog""
+Output:
+""d.o.g""
+
+Test Case 4:
+Input:
+""j""
+Output:
+""j""
+
+Test Case 5:
+Input:
+""""
+Output:
+"""""
+92,"Define a function named count that takes a single parameter. The parameter is a string. The string will contain a single word divided into syllables by hyphens, such as these: ""ho-tel"", ""cat""","Test Case 1:
+Input:
+""ho-tel""
+Output:
+2
+
+Test Case 2:
+Input:
+""cat""
+Output:
+1
+
+Test Case 3:
+Input:
+""in-ter-est-ing""
+Output:
+4
+
+Test Case 4:
+Input:
+""hel-lo""
+Output:
+2
+
+Test Case 5:
+Input:
+""a-b-c-d-e""
+Output:
+5"
+93,"Two strings are anagrams if you can make one from the other by rearranging the letters. Write a function named is_anagram that takes two strings as its parameters. Your function should return True if the strings are anagrams, and False otherwise.","Test Case 1:
+Input:
+""listen"", ""silent""
+Output:
+True
+
+Test Case 2:
+Input:
+""hello"", ""world""
+Output:
+False
+
+Test Case 3:
+Input:
+""evil"", ""vile""
+Output:
+True
+
+Test Case 4:
+Input:
+""looped"", ""poodle""
+Output:
+True
+
+Test Case 5:
+Input:
+""apple"", ""pale""
+Output:
+False"
+94,Write a function that takes a list of lists and flattens it into a one-dimensional list.,"Test Case 1:
+Input:
+[[1, 2], [3, 4], [5, 6]]
+Output:
+[1, 2, 3, 4, 5, 6]
+
+Test Case 2:
+Input:
+[[1], [2, 3, 4], [5]]
+Output:
+[1, 2, 3, 4, 5]
+
+Test Case 3:
+Input:
+[[""a"", ""b""], [""c""], [""d"", ""e""]]
+Output:
+[""a"", ""b"", ""c"", ""d"", ""e""]
+
+Test Case 4:
+Input:
+[[1, 2, 3], [], [4, 5]]
+Output:
+[1, 2, 3, 4, 5]
+
+Test Case 5:
+Input:
+[]
+Output:
+[]"
+95,Define a function named all_equal that takes a list and checks whether all elements in the list are the same.,"Test Case 1:
+Input:
+[1, 1, 1, 1]
+Output:
+True
+
+Test Case 2:
+Input:
+[""apple"", ""apple"", ""apple""]
+Output:
+True
+
+Test Case 3:
+Input:
+[1, 2, 3, 4]
+Output:
+False
+
+Test Case 4:
+Input:
+[""a"", ""a"", ""b"", ""a""]
+Output:
+False
+
+Test Case 5:
+Input:
+[]
+Output:
+True"
+96,"Define a function named up_down that takes a single number as its parameter. Your function return a tuple containing two numbers; the first should be one lower than the parameter, and the second should be one higher.","Test Case 1:
+Input:
+5
+Output:
+(4, 6)
+
+Test Case 2:
+Input:
+0
+Output:
+(-1, 1)
+
+Test Case 3:
+Input:
+-3
+Output:
+(-4, -2)
+
+Test Case 4:
+Input:
+1
+Output:
+(0, 2)
+
+Test Case 5:
+Input:
+10
+Output:
+(9, 11)"
+97,Create a function that takes two arguments: the original price and the discount percentage as integers and returns the final price after the discount.,"Test Case 1:
+Input:
+100, 10
+Output:
+90.0
+
+Test Case 2:
+Input:
+500, 50
+Output:
+250.0
+
+Test Case 3:
+Input:
+79, 5
+Output:
+75.05
+
+Test Case 4:
+Input:
+200, 0
+Output:
+200.0
+
+Test Case 5:
+Input:
+1000, 100
+Output:
+0.0"
+98,Create a function that takes a string and returns a string with its letters in alphabetical order.,"Test Case 1:
+Input:
+""hello""
+Output:
+""ehllo""
+
+Test Case 2:
+Input:
+""zebra""
+Output:
+""aberz""
+
+Test Case 3:
+Input:
+""banana""
+Output:
+""aaabnn""
+
+Test Case 4:
+Input:
+""programming""
+Output:
+""aggimmnoprr""
+
+Test Case 5:
+Input:
+""openai""
+Output:
+""aeinop"
+99,Write a function that takes a positive integer and return its factorial.,"Test Case 1:
+Input:
+5
+Output:
+120
+
+Test Case 2:
+Input:
+1
+Output:
+1
+
+Test Case 3:
+Input:
+10
+Output:
+3628800
+
+Test Case 4:
+Input:
+7
+Output:
+5040
+
+Test Case 5:
+Input:
+0
+Output:
+1"
+100,Create a function that takes an array of numbers and returns the mean value.,"Test Case 1:
+Input:
+[1, 2, 3, 4, 5]
+Output:
+3.0
+
+Test Case 2:
+Input:
+[10, 20, 30, 40, 50]
+Output:
+30.0
+
+Test Case 3:
+Input:
+[2.5, 3.5, 4.5, 5.5]
+Output:
+4.0
+
+Test Case 4:
+Input:
+[-1, 0, 1]
+Output:
+0.0
+
+Test Case 5:
+Input:
+[1000]
+Output:
+1000.0"
+101,Write a function that takes an array of strings and returns the words that are exactly four letters.,"Test Case 1:
+Input:
+[""apple"", ""banana"", ""pear"", ""grape""]
+Output:
+[""pear"", ""grape""]
+
+Test Case 2:
+Input:
+[""cat"", ""dog"", ""fish"", ""bird""]
+Output:
+[""fish"", ""bird""]
+
+Test Case 3:
+Input:
+[""red"", ""blue"", ""green"", ""yellow""]
+Output:
+[""blue""]
+
+Test Case 4:
+Input:
+[""book"", ""pen"", ""desk"", ""chair""]
+Output:
+[""book"", ""desk""]
+
+Test Case 5:
+Input:
+[""apple"", ""banana"", ""pear"", ""grape"", ""melon""]
+Output:
+[""pear"", ""grape""]"
+102,Create a function that takes an array of arrays with numbers. Return a new (single) array with the largest numbers of each.,"Test Case 1:
+Input:
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+Output:
+[3, 6, 9]
+
+Test Case 2:
+Input:
+[[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+Output:
+[30, 60, 90]
+
+Test Case 3:
+Input:
+[[5, 10, 15], [20, 25, 30], [35, 40, 45]]
+Output:
+[15, 30, 45]
+
+Test Case 4:
+Input:
+[[-1, -2, -3], [-4, -5, -6], [-7, -8, -9]]
+Output:
+[-1, -4, -7]
+
+Test Case 5:
+Input:
+[[0, 1, 2], [3, 4, 5], [6, 7, 8]]
+Output:
+[2, 5, 8]"
+103,"Create a function that takes a string and returns the middle character(s). If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.","Test Case 1:
+Input:
+""hello""
+Output:
+""l""
+
+Test Case 2:
+Input:
+""world""
+Output:
+""rl""
+
+Test Case 3:
+Input:
+""apple""
+Output:
+""p""
+
+Test Case 4:
+Input:
+""banana""
+Output:
+""an""
+
+Test Case 5:
+Input:
+""programming""
+Output:
+""a"""
+104,Create a function that takes an object and returns the keys and values as separate arrays.,"Test Case 1:
+Input:
+{""a"": 1, ""b"": 2, ""c"": 3}
+Output:
+Keys: [""a"", ""b"", ""c""], Values: [1, 2, 3]
+
+Test Case 2:
+Input:
+{""name"": ""Alice"", ""age"": 25, ""city"": ""New York""}
+Output:
+Keys: [""name"", ""age"", ""city""], Values: [""Alice"", 25, ""New York""]
+
+Test Case 3:
+Input:
+{""x"": true, ""y"": false, ""z"": true}
+Output:
+Keys: [""x"", ""y"", ""z""], Values: [true, false, true]
+
+Test Case 4:
+Input:
+{""a"": [1, 2, 3], ""b"": [4, 5], ""c"": [6]}
+Output:
+Keys: [""a"", ""b"", ""c""], Values: [[1, 2, 3], [4, 5], [6]]
+
+Test Case 5:
+Input:
+{}
+Output:
+Keys: [], Values: []"
+105,Create a function that finds the index of a given item.,"Test Case 1:
+Input:
+[1, 2, 3, 4, 5], 3
+Output:
+2
+
+Test Case 2:
+Input:
+[""apple"", ""banana"", ""cherry""], ""banana""
+Output:
+1
+
+Test Case 3:
+Input:
+[10, 20, 30, 40, 50], 60
+Output:
+-1
+
+Test Case 4:
+Input:
+[""a"", ""b"", ""c"", ""d""], ""e""
+Output:
+-1
+
+Test Case 5:
+Input:
+[True, False, True], False
+Output:
+1"
+106,Create a function that takes a word and returns true if the word has two consecutive identical letters.,"Test Case 1:
+Input:
+""hello""
+Output:
+True
+
+Test Case 2:
+Input:
+""apple""
+Output:
+True
+
+Test Case 3:
+Input:
+""banana""
+Output:
+True
+
+Test Case 4:
+Input:
+""programming""
+Output:
+False
+
+Test Case 5:
+Input:
+""openai""
+Output:
+False"
+107,"Given an ""out"" string length 4, such as ""<<>>"", and a word, return a new string where the word is in the middle of the out string, e.g. ""<<word>>"".","Test Case 1:
+Input:
+""<<>>"", ""hello""
+Output:
+""<<hello>>""
+
+Test Case 2:
+Input:
+""[[]]"", ""world""
+Output:
+""[[world]]""
+
+Test Case 3:
+Input:
+""()"", ""python""
+Output:
+""(python)""
+
+Test Case 4:
+Input:
+""{{}}"", ""programming""
+Output:
+""{{programming}}""
+
+Test Case 5:
+Input:
+""**"", ""openai""
+Output:
+""openai"""
+108,"Given a string, return a new string made of 3 copies of the last 2 chars of the original string. The string length will be at least 2.","Test Case 1:
+Input:
+""hello""
+Output:
+""lololo""
+
+Test Case 2:
+Input:
+""python""
+Output:
+""ononon""
+
+Test Case 3:
+Input:
+""programming""
+Output:
+""ngngng""
+
+Test Case 4:
+Input:
+""openai""
+Output:
+""aiiaii""
+
+Test Case 5:
+Input:
+""abcd""
+Output:
+""cdcdcd"""
+109,"Given a string, return the string made of its first two chars, so the String ""Hello"" yields ""He"". If the string is shorter than length 2, return whatever there is, so ""X"" yields ""X"", and the empty string """" yields the empty string """".","Test Case 1:
+Input:
+""Hello""
+Output:
+""He""
+
+Test Case 2:
+Input:
+""python""
+Output:
+""py""
+
+Test Case 3:
+Input:
+""programming""
+Output:
+""pr""
+
+Test Case 4:
+Input:
+""openai""
+Output:
+""op""
+
+Test Case 5:
+Input:
+""X""
+Output:
+""X"""
+110,"Given a string of even length, return the first half. So the string ""WooHoo"" yields ""Woo"".","Test Case 1:
+Input:
+""WooHoo""
+Output:
+""Woo""
+
+Test Case 2:
+Input:
+""python""
+Output:
+""pyt""
+
+Test Case 3:
+Input:
+""programming""
+Output:
+""progra""
+
+Test Case 4:
+Input:
+""openai""
+Output:
+""ope""
+
+Test Case 5:
+Input:
+""abcdef""
+Output:
+""abc"""
+111,"Given a string, return a version without the first and last char, so ""Hello"" yields ""ell"". The string length will be at least 2.","Test Case 1:
+Input:
+""Hello""
+Output:
+""ell""
+
+Test Case 2:
+Input:
+""python""
+Output:
+""ytho""
+
+Test Case 3:
+Input:
+""programming""
+Output:
+""rogrammin""
+
+Test Case 4:
+Input:
+""openai""
+Output:
+""pena""
+
+Test Case 5:
+Input:
+""abcdef""
+Output:
+""bcde"""
+112,"Given 2 strings, a and b, return a string of the form short+long+short, with the shorter string on the outside and the longer string on the inside. The strings will not be the same length, but they may be empty (length 0).","Test Case 1:
+Input:
+""Hello"", ""Python""
+Output:
+""HelloPythonHello""
+
+Test Case 2:
+Input:
+""openai"", ""AI""
+Output:
+""AIopenaiAI""
+
+Test Case 3:
+Input:
+""apple"", ""banana""
+Output:
+""applebananapple""
+
+Test Case 4:
+Input:
+""longstring"", ""short""
+Output:
+""shortlongstringshort""
+
+Test Case 5:
+Input:
+"""", ""empty""
+Output:
+""empty""
+
+
+
+
+"
+113,"Given 2 strings, return their concatenation, except omit the first char of each. The strings will be at least length 1.","Test Case 1:
+Input:
+""Hello"", ""Python""
+Output:
+""elloython""
+
+Test Case 2:
+Input:
+""openai"", ""AI""
+Output:
+""penaiI""
+
+Test Case 3:
+Input:
+""apple"", ""banana""
+Output:
+""ppleanana""
+
+Test Case 4:
+Input:
+""longstring"", ""short""
+Output:
+""ongstringhort""
+
+Test Case 5:
+Input:
+""abcdef"", ""ghijkl""
+Output:
+""bcdefhijkl"""
+114,"Given a string, return a ""rotated left 2"" version where the first 2 chars are moved to the end. The string length will be at least 2.","Test Case 1:
+Input:
+""Hello""
+Output:
+""lloHe""
+
+Test Case 2:
+Input:
+""python""
+Output:
+""thonpy""
+
+Test Case 3:
+Input:
+""programming""
+Output:
+""ogrammingpr""
+
+Test Case 4:
+Input:
+""openai""
+Output:
+""enaiop""
+
+Test Case 5:
+Input:
+""abcdef""
+Output:
+""cdefab"""
+115,"Create two Python lists for height and weight. Then, import the numpy package and create numpy arrays out of the newly created lists","Test Case 1:
+Input:
+height_list = [170, 165, 180, 155, 190]
+weight_list = [70, 60, 85, 50, 95]
+Output:
+Height NumPy array: [170 165 180 155 190]
+Weight NumPy array: [70 60 85 50 95]
+
+Test Case 2:
+Input:
+height_list = [150, 160, 175, 140, 185]
+weight_list = [55, 62, 80, 48, 90]
+Output:
+Height NumPy array: [150 160 175 140 185]
+Weight NumPy array: [55 62 80 48 90]
+
+Test Case 3:
+Input:
+height_list = [160, 170, 155, 180, 145]
+weight_list = [58, 72, 50, 85, 46]
+Output:
+Height NumPy array: [160 170 155 180 145]
+Weight NumPy array: [58 72 50 85 46]
+
+Test Case 4:
+Input:
+height_list = [165, 175, 160, 185, 150]
+weight_list = [65, 68, 55, 75, 52]
+Output:
+Height NumPy array: [165 175 160 185 150]
+Weight NumPy array: [65 68 55 75 52]
+
+Test Case 5:
+Input:
+height_list = [180, 190, 175, 200, 170]
+weight_list = [80, 92, 78, 105, 75]
+Output:
+Height NumPy array: [180 190 175 200 170]
+Weight NumPy array: [80 92 78 105 75]"
+116,"Perform element-wise calculations on height and weight. For example, you could take all 6 of the height and weight observations above, and calculate the BMI for each observation with a single equation","Test Case 1:
+Input:
+height_array = np.array([170, 165, 180, 155, 190])
+weight_array = np.array([70, 60, 85, 50, 95])
+Output:
+BMI_array = [24.22 22.04 26.23 20.81 26.32]
+
+Test Case 2:
+Input:
+height_array = np.array([150, 160, 175, 140, 185])
+weight_array = np.array([55, 62, 80, 48, 90])
+Output:
+BMI_array = [24.44 24.22 26.12 24.49 26.34]
+
+Test Case 3:
+Input:
+height_array = np.array([160, 170, 155, 180, 145])
+weight_array = np.array([58, 72, 50, 85, 46])
+Output:
+BMI_array = [22.66 24.92 20.85 26.23 21.85]
+
+Test Case 4:
+Input:
+height_array = np.array([165, 175, 160, 185, 150])
+weight_array = np.array([65, 68, 55, 75, 52])
+Output:
+BMI_array = [23.88 22.2 21.48 21.93 23.11]
+
+Test Case 5:
+Input:
+height_array = np.array([180, 190, 175, 200, 170])
+weight_array = np.array([80, 92, 78, 105, 75])
+Output:
+BMI_array = [24.69 25.46 25.47 26.25 25.95]"
+117,Use subsetting to find out which observations in our BMI array are above 23,"Test Case 1:
+Input:
+BMI_array = np.array([24.22, 22.04, 26.23, 20.81, 26.32])
+Output:
+Above_23_indices = [0 2 4]
+
+Test Case 2:
+Input:
+BMI_array = np.array([24.44, 24.22, 26.12, 24.49, 26.34])
+Output:
+Above_23_indices = [0 1 2 3 4]
+
+Test Case 3:
+Input:
+BMI_array = np.array([22.66, 24.92, 20.85, 26.23, 21.85])
+Output:
+Above_23_indices = [1 3]
+
+Test Case 4:
+Input:
+BMI_array = np.array([23.88, 22.2, 21.48, 21.93, 23.11])
+Output:
+Above_23_indices = [0 4]
+
+Test Case 5:
+Input:
+BMI_array = np.array([24.69, 25.46, 25.47, 26.25, 25.95])
+Output:
+Above_23_indices = [0 1 2 3 4]"
+118,"Convert the list of weights from a list to a Numpy array. Then, convert all of the weights from kilograms to pounds. Use the scalar conversion of 2.2 lbs per kilogram to make your conversion. Lastly, print the resulting array of weights in pounds","Test Case 1:
+Input:
+weight_list = [70, 60, 85, 50, 95]
+weight_array = np.array(weight_list)
+weight_array_pounds = weight_array * 2.2
+Output:
+Weight array in pounds: [154. 132. 187. 110. 209.]
+
+Test Case 2:
+Input:
+weight_list = [55, 62, 80, 48, 90]
+weight_array = np.array(weight_list)
+weight_array_pounds = weight_array * 2.2
+Output:
+Weight array in pounds: [121. 136.4 176. 105.6 198. ]
+
+Test Case 3:
+Input:
+weight_list = [58, 72, 50, 85, 46]
+weight_array = np.array(weight_list)
+weight_array_pounds = weight_array * 2.2
+Output:
+Weight array in pounds: [127.6 158.4 110. 187. 101.2]
+
+Test Case 4:
+Input:
+weight_list = [65, 68, 55, 75, 52]
+weight_array = np.array(weight_list)
+weight_array_pounds = weight_array * 2.2
+Output:
+Weight array in pounds: [143. 149.6 121. 165. 114.4]
+
+Test Case 5:
+Input:
+weight_list = [80, 92, 78, 105, 75]
+weight_array = np.array(weight_list)
+weight_array_pounds = weight_array * 2.2
+Output:
+Weight array in pounds: [176. 202.4 171.6 231. 165. ]"

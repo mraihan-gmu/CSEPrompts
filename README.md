@@ -73,7 +73,7 @@ If you use this dataset, please cite our paper.
 
 
 ### Pass@1 Comparison
-![Pass@1 Comparison](/images/passat1_comparison.png)
+![Pass@1 Comparison](/images/pass@1_comparison.png)
 
 ---
 

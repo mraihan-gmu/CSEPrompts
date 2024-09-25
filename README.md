@@ -73,12 +73,12 @@ If you use this dataset, please cite our paper.
 
 
 ### Pass@1 Comparison
-![Pass@1 Comparison](passat1_comparison.png)
+![Pass@1 Comparison](/images/passat1_comparison.png)
 
 ---
 
 ### MCQ Performance Comparison
-![MCQ Performance Comparison](mcq_performance.png)
+![MCQ Performance Comparison](/images/mcq_performance.png)
 
 ---
 

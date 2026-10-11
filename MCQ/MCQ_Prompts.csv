@@ -36,7 +36,7 @@ False
 
 An error message
 
-There will be no output",2
+There will be no output",An error message
 "print(int(""2""))
 What would be the output of the line of code above? Include only what is actually printed to the console.
 Pick one option from below:
@@ -73,7 +73,7 @@ False
 
 An error message
 
-There will be no output","""2.1"""
+There will be no output",2.1
 "print(float(""2""))
 What would be the output of the line of code above? Include only what is actually printed to the console.
 Pick one option from below:
@@ -92,7 +92,7 @@ False
 
 An error message
 
-There will be no output",2
+There will be no output",2.0
 "print(bool(""""))
 What would be the output of the line of code above? Include only what is actually printed to the console.
 Pick one option from below:
@@ -111,7 +111,7 @@ False
 
 An error message
 
-There will be no output",FALSE
+There will be no output",False
 "print(bool(2))
 What would be the output of the line of code above? Include only what is actually printed to the console.
 Print one option from below:
@@ -130,7 +130,7 @@ False
 
 An error message
 
-There will be no output",TRUE
+There will be no output",True
 "print(float(False))
 What would be the output of the line of code above? Include only what is actually printed to the console.
 Pick one option from below:
@@ -149,31 +149,31 @@ False
 
 An error message
 
-There will be no output",0
+There will be no output",0.0
 "not (False and True)
 Does the statement above resolve to True or False?
 
 True
 
-False",TRUE
+False",True
 "False or not True
 Does the statement above resolve to True or False?
 
 True
 
-False",FALSE
+False",False
 "(True and not False) and False
 Does the statement above resolve to True or False?
 
 True
 
-False",FALSE
+False",False
 "(False and True) or (False or True)
 Does the statement above resolve to True or False?
 
 True
 
-False",TRUE
+False",True
 "1| if not user_is_invalid and (password_correct or previously_authenticated):  
 
 2|     print(""Login successful!"")  
@@ -273,9 +273,7 @@ time_since_citizenship = 8
  
   
   
-None of the above  ","age = 52
-born_in_the_us = False
-time_since_citizenship = 7"
+None of the above  ",None of the above
 "1| if cash_on_hand < 20 and (atm_nearby or cashback_nearby):  
 
 2|     print(""Get some cash!"")  
@@ -441,70 +439,22 @@ out_of_network = True
   
   
   
-None of the above","cost = 2500
-out_of_network = True"
-"1| if out_of_network and cost > 1000:  
+None of the above",None of the above
+"What is printed by the following statements?
 
-2| print(""The maximum out-of-network cost is $1000."")  
+alist = [4,2,8,6,5]
+blist = [num*2 for num in alist if num%2==1]
+print(blist)
 
-3| elif not out_of_network and cost > 5000:  
+Pick one option from below:
 
-4| print(""The maximum in-network cost is $5000."") 
+[4,2,8,6,5]
 
- 5| else:  
+[8,4,16,12,10]
 
-6| print(""Expense approved!"") 
+10
 
- 
-
-cost = 500 
-out_of_network = False 
-
- 
-
-cost = 500 
-out_of_network = True 
-
- 
-
-cost = 2500 
-out_of_network = False 
-
- 
-
-cost = 2500 
-out_of_network = True 
-
- 
-
-cost = 5000 
-out_of_network = False 
-
- 
-
-cost = 5000 
-out_of_network = True 
-
- 
-
- 
-
-cost = 7500 
-out_of_network = False 
-
- 
-
-cost = 7500 
-out_of_network = True 
-
- 
-
- 
-
- 
-
-None of the above ","None of the above
-"
+[10]",[10]
 "1| if is_breakfasttime:   
  
 2|     if cash > 10:   
@@ -680,7 +630,7 @@ Pick One option from below:
 
 [1, -5, 4, -4, 2, -1, 5, 9]
 
-An error would result before line 9 is reached.","[1, 4, 2, 5, 9]"
+An error would result before line 9 is reached.","[-5, 4, -4, 2, -1, 5, 9]"
 "1| def add_to_list(a_list, new_item, new_index):
 2|     a_list.insert(new_index, new_item)
 Above is a definition of a function called add_to_list(). Now imagine that we were to run the code:
@@ -726,7 +676,7 @@ None
 
 {""Georgia"": ""Atlanta"", ""Idaho"": ""Boise"", ""Maine"": ""Augusta"", ""Austin"": ""Texas""}
 
-An error would result before line 5 is reached.","{""""Georgia"""": """"Atlanta"""", """"Idaho"""": """"Boise"""", """"Maine"""": """"Augusta""""}"
+An error would result before line 5 is reached.","{""Georgia"": ""Atlanta"", ""Idaho"": ""Boise"", ""Maine"": ""Augusta""}"
 "1| def find_the_evens(a_list):
 2|     list_of_evens = []
 3|     for i in range(len(a_list)):
@@ -832,9 +782,11 @@ open(filename, ""r"")
 
 my_file = open(filename)
 
+my_file = open(filename, ""w"")
+
 my_file = open(filename, ""a"")
 
-my_file = open(filename, ""r"")","my_file.write(str(item) + ""\t"" + str(a_dict[item]) + ""\n"")"
+my_file = open(filename, ""r"")","my_file = open(filename, ""w"")"
 "Imagine you have a file of integers called my_file.txt. Each line of the file contains either an integer (e.g. 5) or a float (e.g. 5.276).
 
 The code below attempts to read all the numbers in the file, average them, and print the result. Will it work? If not, why not?
@@ -886,7 +838,7 @@ some_number == 2
 
 some_number >= 2
 
-None of these will work with the remainder of the code as written.",some_number * factorial(some_number - 1)
+None of these will work with the remainder of the code as written.",None of these will work with the remainder of the code as written.
 "1| def factorial(some_number):
 2|     if [1]:
 3|         return 1
@@ -969,9 +921,9 @@ age = 52
 born_in_the_us = False
 time_since_citizenship = 7
 
-None of the above","age = 30
+None of the above","age = 48
 born_in_the_us = False
-time_since_citizenship = 8"
+time_since_citizenship = 9"
 "1| if not (is_holiday or is_weekend) and are_enrolled:
 2|     print(""Go to school!"")
 3| else:
@@ -1039,9 +991,7 @@ am_hungry = False
 am_thirsty = False 
 cash = 11
 
-None of the above","am_hungry = True
-am_thirsty = True
-cash = 7"
+None of the above",None of the above
 "The following code segment is used for both parts 5 and 6.
 
 1| if reimbursement >= 1000 and travel_is_international:
@@ -1116,9 +1066,7 @@ travel_is_international = False
 reimbursement = 500
 travel_is_international = True
 
-None of the above","reimbursement = 750, travel_is_international = False
-reimbursement = 500, travel_is_international = False
-reimbursement = 750, travel_is_international = True
+None of the above","reimbursement = 750, travel_is_international = True
 reimbursement = 500, travel_is_international = True"
 "1| if is_lunchtime:
  2|     if cash > 10:
@@ -1207,7 +1155,7 @@ cash = 7
 is_lunchtime = False
 cash = 2
 
-None of the above",None of the above
+None of the above","is_lunchtime = False, cash = 2"
 "1| if i >= 1000000000:
 2|     print(""Billions!"")
 3| elif i >= 1000000:
@@ -1232,8 +1180,8 @@ if i >= 1000 and i not >= 1000000 and i not >= 1000000000:
 
 elif i >= 1000 and i not >= 1000000 and i not >= 1000000000:
 
-None of the above","if i >= 1000:
-elif i >= 1000 and not i >= 1000000 and not i >= 1000000000:"
+None of the above","elif i >= 1000:
+elif i >= 1000 and not i >= 1000000 or i >= 1000000000:"
 "1| start = 0
 2| finish = 10
 3| [fill in this blank]
@@ -1278,8 +1226,7 @@ while i <= finish:
 print(range(start, finish, 2))
 
 None of the above","for i in range(start, finish + 1): if i % 2 == 0: print(i)
-while start <= finish: print(start) start += 2
-i = start + (start % 2) while i <= finish: print(i) i += 2"
+if start % 2 == 1: i = start + 1 else: i = start while i <= finish: print(i) i += 2"
 "1| [fill in this blank]
  2|     if is_celsius and temperature > 0.0:
  3|         return True
@@ -1346,9 +1293,9 @@ else:
 finally:
     print(""A TypeError occurred!"")
 
-None of the above","except TypeError: print(""A TypeError occurred!"")"
+None of the above",None of the above
 "1| def check_even(an_int):
-The function check_even should return True if an_int is odd, False if it is not.
+The function check_even should return True if an_int is even, False if it is not.
 
 Which of the following will correctly complete this function? (There may be more than one correct answer. Choose any correct answer.)
 
@@ -1376,8 +1323,10 @@ Which of the following will correctly complete this function? (There may be more
         return False
     return True
 
-None of the above","if an_int % 2 == 0: return True
-if an_int % 2 == 1: return False"
+None of the above","if an_int % 2 == 0: return True else: return False
+if an_int % 2 == 1: return False else: return True
+if an_int % 2 == 0: return True return False
+if an_int % 2 == 1: return False return True"
 "1| def average_odds(start, end):
 2|     sum = 0
 3|     count = 0
@@ -1733,81 +1682,71 @@ Which of the following segments would correctly complete this function? (There m
 
  
 
-sum += i 
+        sum += i
 
- 
+        count += 1
 
-count += 1 
+        sum += i
+        count += 1
 
- 
+        if i % 2 == 0:
+            sum += i
+        count += 1
 
-sum += i 
-count += 1 
+        if i % 2 == 0:
+            sum += i
+            count += 1
 
- 
+        if not (i % 2 == 0):
+            sum += i
+        count += 1
 
-if i % 2 == 0: 
- sum += i 
- count += 1 
+        if not (i % 2 == 0):
+            sum += i
+            count += 1
 
- 
+        if i % 2 == 1:
+            sum += i
+        count += 1
 
-if i % 2 == 0: 
- sum += i 
- count += 1 
+        if i % 2 == 1:
+            sum += i
+            count += 1
 
- 
+        if not (i % 2 == 1):
+            sum += i
+        count += 1
 
-if not (i % 2 == 0): 
- sum += i 
- count += 1 
-
- 
-
-if not (i % 2 == 0): 
- sum += i 
- count += 1 
-
- 
-
-if i % 2 == 1: 
- sum += i 
- count += 1 
-
- 
-
-if i % 2 == 1: 
- sum += i 
- count += 1 
-
- 
-
-if not (i % 2 == 1): 
- sum += i 
- count += 1 
-
- 
-
-if not (i % 2 == 1): 
- sum += i 
- count += 1 
-
- 
+        if not (i % 2 == 1):
+            sum += i
+            count += 1
 
 None of the above 
 
  
  
 
- ","if i % 2 == 0:
-            sum += i
-            count += 1"
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
+ ","if i % 2 == 0: sum += i count += 1
+if not (i % 2 == 1): sum += i count += 1"
+"What value will be printed for z?
+
+initial = 7
+def f(x, y = 3, z = initial):
+    print(""x, y, z are:"", x, y, z)
+
+f(2, 5)
+
+Pick one option from below:
+
+2
+
+3
+
+5
+
+7
+
+Runtime error since not enough values are passed in the call to f",7
 "print(5**2)
 What will be the output of this Python code?
 10
@@ -1826,14 +1765,26 @@ What will be the output?
 5
 5.0
 None
-Error",5
-"for i in range(1, 4):
-    print(i)
-What will be the output?
-0 1 2
-1 2 3
-1 2 3 4
-None",1 2 3
+Error",5.0
+"What value will be printed for x?
+
+initial = 7
+def f(x, y = 3, z = initial):
+    print(""x, y, z are:"", x, y, z)
+
+f(2, x=5)
+
+Pick one option from below:
+
+2
+
+3
+
+5
+
+7
+
+Runtime error since two different values are provided for x",Runtime error since two different values are provided for x
 "x = [1, 2, 3]
 print(x[0])
 What will be printed?
@@ -1848,12 +1799,23 @@ What is the output of this code?
 2
 3
 None",3
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
+"What value will be printed for z?
+
+initial = 7
+def f(x, y = 3, z = initial):
+    print (""x, y, z are:"", x, y, z)
+initial = 0
+f(2)
+
+Pick one option from below:
+
+2
+
+7
+
+0
+
+Runtime error since two different values are provided for initial.",7
 "def func(x):
     return x * 2
 print(func(3))
@@ -1875,269 +1837,627 @@ What would be the output of this Python code?
 2.0
 3
 None",2
-"y = [1, 2, 3]
-print(y[-1])
-What is the output of this code?
-1
-2
-3
-None",3
-"x = ""hello""
-print(len(x))
-What will be printed?
-4
-5
-None
-Error",5
-"for i in range(1, 4):
-    print(i)
-What will be the output?
-0 1 2
-1 2 3
-1 2 3 4
-None",1 2 3
-"for i in range(1, 4):
-    print(i)
-What will be the output?
-0 1 2
-1 2 3
-1 2 3 4
-None",1 2 3
-"def func(x):
-    return x * 2
-print(func(3))
-What is the output?
-6
-3
-9
-None",6
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
-"for i in range(1, 4):
-    print(i)
-What will be the output?
-0 1 2
-1 2 3
-1 2 3 4
-None",1 2 3
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"for i in range(1, 4):
-    print(i)
-What will be the output?
-0 1 2
-1 2 3
-1 2 3 4
-None",1 2 3
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"print(5**2)
-What will be the output of this Python code?
+"What will the following code print if x = 3, y = 5, and z = 2?
+
+if x < y and x < z:
+    print(""a"")
+elif y < x and y < z:
+    print(""b"")
+else:
+    print(""c"")
+
+Pick one option from below:
+
+a
+
+b
+
+c",c
+"What is printed by the following statements?
+
+list= [5, 2, 1, 4, 9, 10]
+min_value = 0
+for item in list:
+   if item < min_value:
+       min_value = item
+print(min_value)
+
+Pick one option from below:
+
 10
-25
-5
-None",25
-"x = [1, 2, 3]
-print(x[0])
-What will be printed?
+
 1
+
+0
+
+There is an error in the code so it cannot run.",0
+"What is printed by the following statements?
+
+mydict = {""cat"":12, ""dog"":6, ""elephant"":23, ""bear"":20}
+yourdict = mydict
+yourdict[""elephant""] = 999
+print(mydict[""elephant""])
+
+Pick one option from below:
+
+23
+
+None
+
+999
+
+Error, there are two different keys named elephant.",999
+"What is printed by the following statements?
+
+mydict = {""cat"":12, ""dog"":6, ""elephant"":23, ""bear"":20}
+answer = mydict.get(""cat"")//mydict.get(""dog"")
+print(answer)
+
+Pick one option from below:
+
 2
-None
-Error",1
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"def func(x):
-    return x * 2
-print(func(3))
-What is the output?
-6
-3
-9
-None",6
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"print(5//2)
-What would be the output of this Python code?
-2
-2.0
-3
-None",2
-"y = [1, 2, 3]
-print(y[-1])
-What is the output of this code?
+
+0.5
+
+bear
+
+Error, divide is not a valid operation on dictionaries.",2
+"What is printed by the following statements?
+
+total = 0
+mydict = {""cat"":12, ""dog"":6, ""elephant"":23, ""bear"":20}
+for akey in mydict:
+   if len(akey) > 3:
+      total = total + mydict[akey]
+print(total)
+
+Pick one option from below:
+
+18
+
+43
+
+0
+
+61",43
+"How many lines will print out when the following code is executed?
+
+try:
+    for i in range(5):
+        print(1.0 / (3-i))
+except Exception as error_inst:
+    print(""Got an error"", error_inst)
+
+Pick one option from below:
+
+0
+
 1
-2
+
 3
-None",3
-"y = [1, 2, 3]
-print(y[-1])
-What is the output of this code?
-1
-2
-3
-None",3
-"x = [1, 2, 3]
-print(x[0])
-What will be printed?
-1
-2
-None
-Error",1
-"def func(x):
-    return x * 2
-print(func(3))
-What is the output?
-6
-3
-9
-None",6
-"print(5//2)
-What would be the output of this Python code?
-2
-2.0
-3
-None",2
-"x = ""hello""
-print(len(x))
-What will be printed?
+
 4
-5
-None
-Error",5
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"print(5//2)
-What would be the output of this Python code?
+
+5",4
+"What output will the following code produce?
+
+def cyu(s1, s2):
+   if len(s1) > len(s2):
+      print(s1)
+   else:
+      print(s2)
+
+cyu(""Hello"", ""Goodbye"")
+
+Pick one option from below:
+
+Hello
+
+Goodbye
+
+s1
+
+s2",Goodbye
+"What will the following code output?
+
+def square(x):
+    return x*x
+
+def g(y):
+    return y + 3
+
+def h(y):
+    return square(y) + 3
+
+print(h(2))
+
+Pick one option from below:
+
 2
-2.0
+
+5
+
+7
+
+25
+
+Error: y has a value but x is an unbound variable inside the square function",7
+"x = 5
+x += 3
+print(x)
+What will be printed?
+5
 3
+8
+None",8
+"What will the following function return?
+
+def addEm(x, y, z):
+    print(x+y+z)
+
+Pick one option from below:
+
+The value None
+
+The value of x+y+z
+
+The string 'x+y+z'",The value None
+"What will the following code output?
+
+def square(x):
+    y = x * x
+    return y
+
+print(square(square(2)))
+
+Pick one option from below:
+
+8
+
+16
+
+Error: can't put a function invocation inside parentheses",16
+"What will the following code output?
+
+def cyu2(s1, s2):
+    x = len(s1)
+    y = len(s2)
+    return x-y
+
+z = cyu2(""Yes"", ""no"")
+if z > 0:
+    print(""First one was longer"")
+else:
+    print(""Second one was at least as long"")
+
+Pick one option from below:
+
+1
+
+Yes
+
+First one was longer
+
+Second one was at least as long
+
+Error",First one was longer
+"Which will print out first, square, g, or a number?
+
+def square(x):
+    print(""square"")
+    return x*x
+
+def g(y):
+    print(""g"")
+    return y + 3
+
+print(square(g(2)))
+
+Pick one option from below:
+
+square
+
+g
+
+a number",g
+"How many lines will the following code print?
+
+def show_me_numbers(list_of_ints):
+    print(10)
+    print(""Next we'll accumulate the sum"")
+    accum = 0
+    for num in list_of_ints:
+        accum = accum + num
+    return accum
+    print(""All done with accumulation!"")
+
+show_me_numbers([4,2,3])
+
+Pick one option from below:
+
+3
+
+2
+
 None",2
-"x = ""hello""
-print(len(x))
-What will be printed?
+"What happens when the following is executed?
+
+def display(msg: str):
+    """"""Displays `msg` on the screen""""""
+    print(msg + 2)
+
+display(2.5)
+
+Pick one option from below:
+
+The value 4.5 is displayed on the screen.
+
+The value 2.52 is displayed on the screen.
+
+A runtime error occurs when the function is invoked because 2.5 is not a string.
+
+A runtime error occurs because the expression 'msg + 2' illegally attempts to concatenate a str and an int.",The value 4.5 is displayed on the screen.
+"What would be the result of running the following code?
+
+x = 3 * 2
+y = 1
+
+def subtract(z):
+    y = 10
+    return y - z
+
+print(subtract(x)) 
+
+Pick one option from below:
+
 4
-5
-None
-Error",5
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
-"x = [1, 2, 3]
-print(x[0])
-What will be printed?
-1
-2
-None
-Error",1
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"x = 5
-x += 3
-print(x)
-What will be printed?
-5
-3
-8
-None",8
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"print(bool(""""))
-What will be printed?
-True
-False
-None
-Error",FALSE
-"x = [1, 2, 3]
-print(x[0])
-What will be printed?
-1
-2
-None
-Error",1
-"print(float(5))
-What will be the output?
-5
-5.0
-None
-Error",5
-"print(5**2)
-What will be the output of this Python code?
+
+6
+
 10
-25
-5
-None",25
-"print(5**2)
-What will be the output of this Python code?
+
+Code will give an error because x and z do not match.",4
+"What would be the result of running the following code?
+
+def adding(x):
+    y = 3
+    z = y + x + x
+    return z
+
+def producing(x):
+    z = x * y
+    return z
+
+print(producing(adding(4)))
+
+Pick one option from below:
+
+33
+
+12
+
+There is an error in the code.",There is an error in the code.
+"What would be the result of running the following code?
+
+x = 9
+
+def adding():
+    x+=1
+    print(x)
+
+adding()
+
+Pick one option from below:
+
+1
+
+9
+
 10
-25
+
+Error, local variable 'x' is referenced before assignment.","Error, local variable 'x' is referenced before assignment."
+"How many times will the for loop iterate in the following statements?
+
+p = [3, 4, ""Me"", 3, [], ""Why"", 0, ""Tell"", 9.3]
+for ch in p:
+   print(ch)
+
+Pick one option from below:
+
+8
+
+9
+
+15
+
+Error, the for statement needs to use the range function.",9
+"How many times is the word HELLO printed by the following statements?
+
+s = ""python rocks""
+for ch in s[3:8]:
+   print(""HELLO"")
+
+Pick one option from below:
+
+4
+
 5
-None",25
+
+6
+
+Error, the for statement cannot use slice.",5
+"How many times is the letter p printed by the following statements?
+
+s = ""python""
+for idx in range(len(s)):
+   print(s[idx % 2])
+
+Pick one option from below:
+
+0
+
+1
+
+2
+
+3
+
+6",3
+"The following code contains an infinite loop. Which is the best explanation for why the loop does not terminate?
+
+n = 10
+answer = 1
+while ( n > 0 ):
+  answer = answer + n
+  n = n + 1
+print(answer)
+
+Pick one option from below:
+
+n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive
+
+answer starts at 1 and is incremented by n each time, so it will always be positive
+
+You cannot compare n to 0 in while loop.  You must compare it to another variable.
+
+In the while loop body, we must set n to False, and this code does not do that.","n starts at 10 and is incremented by 1 each time through the loop, so it will always be positive"
+"What is printed by the following statements?
+
+alist = [1,3,5]
+blist = [2,4,6]
+print(alist + blist)
+
+Pick one option from below:
+
+6
+
+[1,2,3,4,5,6]
+
+[1,3,5,2,4,6]
+
+[3,7,11]","[1,3,5,2,4,6]"
+"What will be stored in the variable ty below?
+
+qu = ""wow, welcome week!""
+ty = qu.index(""we"")
+
+Pick one option from below:
+
+5
+
+6
+
+13
+
+14
+
+There is an error.",5
+"What will be stored in the variable ty below?
+
+qu = ""wow, welcome week! Were you wanting to go?""
+ty = qu.count(""we"")
+
+Pick one option from below:
+
+0
+
+2
+
+3
+
+There is an error.",2
+"What will be stored in the variable ht below?
+
+rooms = ['bathroom', 'kitchen', 'living room', 'bedroom', 'closet', ""foyer""]
+ht = rooms.index(""garden"")
+
+Pick one option from below:
+
+0
+
+-1
+
+There is an error.",There is an error.
+"What is printed by the following statements?
+
+s = ""python rocks""
+print(s[2] + s[-4])
+
+Pick one option from below:
+
+tr
+
+to
+
+ps
+
+nn
+
+Error, you cannot use the [ ] operator with the + operator.",to
+"What is printed by the following statements?
+
+s = ""python rocks""
+print(s[3:8])
+
+Pick one option from below:
+
+python
+
+rocks
+
+hon r
+
+Error, you cannot have two numbers inside the [ ].",hon r
+"What is printed by the following statements?
+
+L = [0.34, '6', 'SI106', 'Python', -2]
+print(len(L[1:-1]))
+
+Pick one option from below:
+
+2
+
+3
+
+4
+
+5",3
+"What will the output be for the following code?
+
+let = ""z""
+let_two = ""p""
+c = let_two + let
+m = c*5
+print(m)
+
+Pick one option from below:
+
+zpzpzpzpzp
+
+zzzzzppppp
+
+pzpzpzpzpz
+
+pppppzzzzz
+
+None of the above, an error will occur.",pzpzpzpzpz
+"What value is printed when the following statement executes?
+
+print(int(53.785))
+
+Pick one option from below:
+
+Nothing is printed. It generates a runtime error.
+
+53
+
+54
+
+53.785",53
+"What value is printed when the following statement executes?
+
+print(18 % 4)
+
+Pick one option from below:
+
+4.25
+
+5
+
+4
+
+2",2
+"What is the value of the following expression:
+
+16 - 2 * 5 // 3 + 1
+
+Pick one option from below:
+
+14
+
+24
+
+3
+
+13.667",14
+"What is printed by the following statements?
+
+alist = [4,2,8,6,5]
+blist = alist * 2
+blist[3] = 999
+print(alist)
+
+Pick one option from below:
+
+[4,2,8,999,5,4,2,8,6,5]
+
+[4,2,8,999,5]
+
+[4,2,8,6,5]","[4,2,8,6,5]"
+"What is printed by the following statements:
+
+s = ""Ball""
+s[0] = ""C""
+print(s)
+
+Pick one option from below:
+
+Ball
+
+Call
+
+Error",Error
+"What is printed by the following statements?
+
+s = ""python rocks""
+print(s[1]*s.index(""n""))
+
+Pick one option from below:
+
+yyyyy
+
+55555
+
+n
+
+Error, you cannot combine all those things together.",yyyyy
+"What is printed by the following statements?
+
+v = 2.34567
+print('{:.1f} {:.2f} {:.7f}'.format(v, v, v))
+
+Pick one option from below:
+
+2.34567 2.34567 2.34567
+
+2.3 2.34 2.34567
+
+2.3 2.35 2.3456700",2.3 2.35 2.3456700
+"What is printed by the following statements:
+
+s = ""ball""
+r = """"
+for item in s:
+   r = item.upper() + r
+print(r)
+
+Pick one option from below:
+
+Ball
+
+BALL
+
+LLAB",LLAB
+"Consider the following alternative way to swap the values of variables x and y. What's wrong with it?
+
+# assume x and y already have values assigned to them
+y = x
+x = y
+
+Pick one option from below:
+
+You can't use different variable names on the left and right side of an assignment statement.
+
+At the end, x still has it's original value instead of y's original value.
+
+Actually, it works just fine!","At the end, x still has it's original value instead of y's original value."

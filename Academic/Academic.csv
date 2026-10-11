@@ -148,19 +148,19 @@ Input: 25, 25
 Expected Output: ""0 cents owed.""
 
 Test Case 2:
-Input: 10, 10, 10, 10, 10, 10
+Input: 25, 10, 25
 Expected Output: ""10 cents owed.""
 
 Test Case 3:
-Input: 25, 25, 10
+Input: 10, 25, 25
 Expected Output: ""10 cents owed.""
 
 Test Case 4:
-Input: 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5
+Input: 5, 5, 5, 5, 5, 5, 5, 5, 5, 10
 Expected Output: ""5 cents owed.""
 
 Test Case 5:
-Input: 50
+Input: 25, 3, 25
 Expected Output: ""0 cents owed."""
 8,"When texting or tweeting, it’s not uncommon to shorten words to save time or space, as by omitting vowels, much like Twitter was originally called twttr. Implement a program that prompts the user for a str of text and then outputs that same text but with all vowels (A, E, I, O, and U) omitted, whether inputted in uppercase or lowercase.","Test Case 1:
 Input: ""Hello, world!""
@@ -168,7 +168,7 @@ Expected Output: ""Hll, wrld!""
 
 Test Case 2:
 Input: ""OpenAI is the best!""
-Expected Output: ""OpnAI s th bst!""
+Expected Output: ""pn s th bst!""
 
 Test Case 3:
 Input: ""I love to code in Python.""
@@ -180,7 +180,7 @@ Expected Output: "" qck brwn fx jmps vr th lzy dg.""
 
 Test Case 5:
 Input: ""AEIOU are vowels. aeiou are also vowels.""
-Expected Output: ""R vwls. r ls vwls."""
+Expected Output: "" r vwls.  r ls vwls."""
 9,"In Massachusetts, home to Harvard University, it’s possible to request a vanity license plate for your car, with your choice of letters and numbers instead of random ones. Among the requirements, though, are:
 
 “All vanity plates must start with at least two letters.”
@@ -277,7 +277,7 @@ Expected Output: ""$11.00"", ""$19.50"", ""$27.50""
 
 Test Case 4:
 Input: ""Pasta"", Control-D
-Expected Output: ""Ignored - not a menu item.""
+Expected Output: (No output)
 
 Test Case 5:
 Input: ""Taco"", ""taco"", ""TACO"", Control-D
@@ -431,6 +431,7 @@ If the guess is larger than that integer, the program should output Too large! a
 If the guess is the same as that integer, the program should output Just right! and exit.","Test Case 1:
 Input:
 Level: 10
+Generated number: 10
 Guesses: 5, 7, 10
 Expected Output:
 ""Too small!"", ""Too small!"", ""Just right!""
@@ -438,13 +439,15 @@ Expected Output:
 Test Case 2:
 Input:
 Level: 20
+Generated number: 20
 Guesses: 25, 15, 20
 Expected Output:
-""Invalid guess!"", ""Too small!"", ""Just right!""
+""Too large!"", ""Too small!"", ""Just right!""
 
 Test Case 3:
 Input:
 Level: 50
+Generated number: 50
 Guesses: 60, 45, 50
 Expected Output:
 ""Too large!"", ""Too small!"", ""Just right!""
@@ -452,16 +455,18 @@ Expected Output:
 Test Case 4:
 Input:
 Level: 100
+Generated number: 100
 Guesses: 150, 90, 100
 Expected Output:
-""Invalid guess!"", ""Too small!"", ""Just right!""
+""Too large!"", ""Too small!"", ""Just right!""
 
 Test Case 5:
 Input:
 Level: 30
+Generated number: 30
 Guesses: 35, 25, 30
 Expected Output:
-""Invalid guess!"", ""Too small!"", ""Just right!"""
+""Too large!"", ""Too small!"", ""Just right!"""
 18,"One of David’s first toys as a child, funny enough, was Little Professor, a “calculator” that would generate ten different math problems for David to solve. For instance, if the toy were to display 4 + 0 = , David would (hopefully) answer with 4. If the toy were to display 4 + 1 = , David would (hopefully) answer with 5. If David were to answer incorrectly, the toy would display EEE. And after three incorrect answers for the same problem, the toy would simply display the correct answer (e.g., 4 + 0 = 4 or 4 + 1 = 5).
 
 In a file called professor.py, implement a program that:
@@ -490,7 +495,7 @@ def generate_integer(level):
 
 
 if __name__ == ""__main__"":
-    main()","est Case 1:
+    main()","Test Case 1:
 Input:
 Level: 1
 Problems: 1 + 1, 2 + 2, 3 + 3, 4 + 4, 5 + 5, 6 + 6, 7 + 7, 8 + 8, 9 + 9, 0 + 0
@@ -578,11 +583,11 @@ Expected Output: "" lv prgrmmng""
 
 Test Case 4:
 Input: ""OpenAI is awesome""
-Expected Output: ""OpnAI s wsm""
+Expected Output: ""pn s wsm""
 
 Test Case 5:
 Input: ""Artificial Intelligence""
-Expected Output: ""rtfcl ntpllgnc"""
+Expected Output: ""rtfcl ntllgnc"""
 21,"implement Home Federal Savings Bank from Problem Set 1, restructuring your code per the below, wherein value expects a str as input and returns 0 if that str starts with “hello”, 20 if that str starts with an “h” (but not “hello”), or 100 otherwise, treating the str case-insensitively. You can assume that the string passed to the value function will not contain any leading spaces. Only main should call print.
 
 here is the Home Federal Savings Bank from Problem Set 1:
@@ -714,23 +719,23 @@ Because some HTML attributes are optional, you could instead minimally embed jus
 
 <iframe src=""https://www.youtube.com/embed/xvFZjo5PgG0""></iframe>
 Suppose that you’d like to extract the URLs of YouTube videos that are embedded in pages (e.g., https://www.youtube.com/embed/xvFZjo5PgG0), converting them back to shorter, shareable youtu.be URLs (e.g., https://youtu.be/xvFZjo5PgG0) where they can be watched on YouTube itself.","Test Case 1:
-Input: ""<iframe src=""https://www.youtube.com/embed/xvFZjo5PgG0\""></iframe>""
+Input: <iframe src=""https://www.youtube.com/embed/xvFZjo5PgG0""></iframe>
 Expected Output: ""https://youtu.be/xvFZjo5PgG0""
 
 Test Case 2:
-Input: ""<iframe src=""https://www.youtube.com/embed/dQw4w9WgXcQ\""></iframe>""
+Input: <iframe src=""https://www.youtube.com/embed/dQw4w9WgXcQ""></iframe>
 Expected Output: ""https://youtu.be/dQw4w9WgXcQ""
 
 Test Case 3:
-Input: ""<iframe src=""https://www.youtube.com/embed/3tmd-ClpJxA\""></iframe>""
+Input: <iframe src=""https://www.youtube.com/embed/3tmd-ClpJxA""></iframe>
 Expected Output: ""https://youtu.be/3tmd-ClpJxA""
 
 Test Case 4:
-Input: ""<iframe src=""https://www.youtube.com/embed/ktvTqknDobU\""></iframe>""
+Input: <iframe src=""https://www.youtube.com/embed/ktvTqknDobU""></iframe>
 Expected Output: ""https://youtu.be/ktvTqknDobU""
 
 Test Case 5:
-Input: ""<iframe src=""https://www.youtube.com/embed/YQHsXMglC9A\""></iframe>""
+Input: <iframe src=""https://www.youtube.com/embed/YQHsXMglC9A""></iframe>
 Expected Output: ""https://youtu.be/YQHsXMglC9A"""
 26,"Whereas most countries use a 24-hour clock, the United States tends to use a 12-hour clock. Accordingly, instead of “09:00 to 17:00”, many Americans would say they work “9:00 AM to 5:00 PM” (or “9 AM to 5 PM”), wherein “AM” is an abbreviation for “ante meridiem” and “PM” is an abbreviation for “post meridiem”, wherein “meridiem” means midday (i.e., noon).
 
@@ -826,7 +831,7 @@ Expected Output: Invalid
 
 Test Case 4:
 Input: john.doe@exa_mple.com
-Expected Output: Valid
+Expected Output: Invalid
 
 Test Case 5:
 Input: john.doe@exa mple.com
@@ -834,24 +839,24 @@ Expected Output: Invalid"
 29,"Assuming there are 365 days in a year, there are 525600 minutes in that same year (because there are 24 hours in a day and 60 minutes in an hour). But how many minutes are there in two or more years? Well, it depends on how many of those are leap years with 366 days, per the Gregorian calendar, as some of them could have 1440 additional minutes. In fact, how many minutes has it been since you were born? Well, that, too, depends on how many leap years there have been since! There is an algorithm for such, but let’s not reinvent that wheel. Let’s use a library instead. Fortunately, Python comes with a datetime module that has a class called date that can help, per docs.python.org/3/library/datetime.html#date-objects.
 
 In a file called seasons.py, implement a program that prompts the user for their date of birth in YYYY-MM-DD format and then sings prints how old they are in minutes, rounded to the nearest integer, using English words instead of numerals, just like the song from Rent, without any and between words. Since a user might not know the time at which they were born, assume, for simplicity, that the user was born at midnight (i.e., 00:00:00) on that date. And assume that the current time is also midnight. In other words, even if the user runs the program at noon, assume that it’s actually midnight, on the same date. Use datetime.date.today to get today’s date, per docs.python.org/3/library/datetime.html#datetime.date.today.","Test Case 1:
-Input: 2000-01-01
-Expected Output: Twenty three million, seven hundred and forty five thousand, six hundred and forty minutes
+Input: 2000-01-01 (today = 2023-07-31)
+Expected Output: Twelve million, four hundred one thousand, two hundred eighty minutes
 
 Test Case 2:
-Input: 1990-07-15
-Expected Output: Seventeen million, two hundred and twenty eight thousand, eight hundred and eighty minutes
+Input: 1990-07-15 (today = 2023-07-31)
+Expected Output: Seventeen million, three hundred seventy-nine thousand, three hundred sixty minutes
 
 Test Case 3:
-Input: 2023-07-31
+Input: 2023-07-31 (today = 2023-07-31)
 Expected Output: Zero minutes
 
 Test Case 4:
-Input: 1985-12-25
-Expected Output: Nineteen million, seven hundred and seventy eight thousand, four hundred and forty minutes
+Input: 1985-12-25 (today = 2023-07-31)
+Expected Output: Nineteen million, seven hundred seventy-four thousand, eighty minutes
 
 Test Case 5:
-Input: 1970-01-01
-Expected Output: Twenty eight million, one hundred and five thousand, six hundred and forty minutes"
+Input: 1970-01-01 (today = 2023-07-31)
+Expected Output: Twenty-eight million, one hundred seventy-nine thousand, three hundred sixty minutes"
 30,Write a program that uses a print function to say 'hello world' as shown in 'Desired Output'.,"Test Case 1:
 
 Input: None
@@ -965,15 +970,15 @@ Output: Gross Pay = 350.0
 
 Test Case 3:
 Input: Hours = 50, Rate per Hour = 12.0
-Output: Gross Pay = 630.0
+Output: Gross Pay = 660.0
 
 Test Case 4:
 Input: Hours = 38, Rate per Hour = 9.25
-Output: Gross Pay = 350.5
+Output: Gross Pay = 351.5
 
 Test Case 5:
 Input: Hours = 55, Rate per Hour = 11.50
-Output: Gross Pay = 632.5"
+Output: Gross Pay = 718.75"
 36,"Write a program that repeatedly prompts a user for integer numbers until the user enters 'done'. Once 'done' is entered, print out the largest and smallest of the numbers. If the user enters anything other than a valid number catch it with a try/except and put out an appropriate message and ignore the number. Enter 7, 2, bob, 10, and 4 and match the output below.","Test Case 1:
 Input: 5, 8, 3, 1, 6, done
 Output: Largest number: 8, Smallest number: 1
@@ -1106,7 +1111,7 @@ Input:
 price = 2000
 months = 10
 balance = 1500
-income = 200
+income = 250
 Output:
 True
 
@@ -1209,7 +1214,7 @@ rainy = True
 windy = False
 snowy = False
 Output:
-Hat: True
+Hat: False
 Gloves: False
 Umbrella: True
 Scarf: False
@@ -1250,7 +1255,7 @@ snowy = False
 Output:
 Hat: True
 Gloves: False
-Umbrella: False
+Umbrella: True
 Scarf: False
 
 Test Case 5:
@@ -1411,7 +1416,7 @@ goal = 50000
 rate = 0.05
 years = 5
 Output:
-Principal needed: 39283.56
+Principal needed: 38940.04
 
 Test Case 2:
 Input:
@@ -1419,7 +1424,7 @@ goal = 100000
 rate = 0.07
 years = 10
 Output:
-Principal needed: 50834.86
+Principal needed: 49658.53
 
 Test Case 3:
 Input:
@@ -1427,7 +1432,7 @@ goal = 5000
 rate = 0.03
 years = 3
 Output:
-Principal needed: 4596.05
+Principal needed: 4569.66
 
 Test Case 4:
 Input:
@@ -1435,7 +1440,7 @@ goal = 150000
 rate = 0.06
 years = 7
 Output:
-Principal needed: 104499.31
+Principal needed: 98557.02
 
 Test Case 5:
 Input:
@@ -1443,7 +1448,7 @@ goal = 20000
 rate = 0.02
 years = 2
 Output:
-Principal needed: 19269.25"
+Principal needed: 19215.79"
 42,"principal = 40000
 rate = 0.05
 years = 5
@@ -1486,7 +1491,7 @@ rate = 0.03
 years = 10
 goal = 50000
 Output:
-False
+True
 
 Test Case 3:
 Input:
@@ -1495,7 +1500,7 @@ rate = 0.07
 years = 5
 goal = 20000
 Output:
-True
+False
 
 Test Case 4:
 Input:
@@ -1698,7 +1703,7 @@ message = ""hi""
 punct = ""*""
 num = 2
 Output:
-""hihihihi**""
+""**hihi**hihi**""
 
 Test Case 2:
 Input:
@@ -1761,7 +1766,7 @@ Test Case 2:
 Input:
 num = 4
 Output:
-""6464646464646464646464646464""
+""64646464646464646464646464646464""
 
 Test Case 3:
 Input:
@@ -1773,13 +1778,13 @@ Test Case 4:
 Input:
 num = 5
 Output:
-""125125125125125125125125125125125125125125125125125""
+""125125125125125125125125125125125125125125125125125125125125125125125125125""
 
 Test Case 5:
 Input:
 num = 6
 Output:
-""216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216"""
+""216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216216"""
 47,"current_day = 31
 current_month = 5
 current_year = 2018
@@ -2194,13 +2199,13 @@ Test Case 3:
 Input:
 ""Bye Bye, Baby!""
 Output:
-""BBB\nyebyeaby\n,!\n3""
+""BBB\nyeyeaby\n,!\n2""
 
 Test Case 4:
 Input:
 ""I Love Python Programming!""
 Output:
-""ILPP\noveythonrogramming\n!\n4""
+""ILPP\noveythonrogramming\n!\n3""
 
 Test Case 5:
 Input:
@@ -2315,7 +2320,7 @@ driver_speed = 70
 speed_limit = 55
 school_zone = True
 Output:
-450
+500
 
 Test Case 5:
 Input:
@@ -2463,7 +2468,7 @@ Test Case 5:
 Input:
 find_weight(76.2)
 Output:
-747.662"
+747.522"
 59,"#Write a function called find_weight. find_weight should
 #take one positional parameter, a float that represents
 #the mass of an object in kilograms. It should return the
@@ -2505,7 +2510,7 @@ Test Case 5:
 Input:
 find_weight(76.2, gravity=1.622) # Moon's gravity
 Output:
-123.6924"
+123.5964"
 60,"list_sum = 7
 list_count = 0
 
@@ -2870,11 +2875,11 @@ Output: {'A': 1, 'a': 2, 'r': 2, 'd': 1, 'v': 1, 'k': 1}
 
 Test Case 3:
 Input: ""Spaces are also characters""
-Output: {'S': 1, 'p': 1, 'a': 4, 'c': 2, 'e': 3, 's': 2, ' ': 3, 'r': 2, 'l': 1, 'o': 1, 'h': 1}
+Output: {'S': 1, 'p': 1, 'a': 5, 'c': 3, 'e': 3, 's': 3, ' ': 3, 'r': 3, 'l': 1, 'o': 1, 'h': 1, 't': 1}
 
 Test Case 4:
 Input: ""!@#$%^&()""
-Output: {'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '': 1, '(': 1, ')': 1}
+Output: {'!': 1, '@': 1, '#': 1, '$': 1, '%': 1, '^': 1, '&': 1, '(': 1, ')': 1}
 
 Test Case 5:
 Input: ""1234567890""
@@ -3111,16 +3116,16 @@ Output:
 Test Case 2:
 Input:
 ((""O"", ""X"", ""X""),
-(""X"", ""O"", ""None""),
-(""None"", ""None"", ""O""))
+(""X"", ""O"", None),
+(None, None, ""O""))
 Output:
-""X""
+""O""
 
 Test Case 3:
 Input:
-((""O"", ""O"", ""None""),
+((""O"", ""O"", None),
 (""X"", ""X"", ""X""),
-(""None"", ""None"", ""None""))
+(None, None, None))
 Output:
 ""X""
 
@@ -3135,8 +3140,8 @@ None
 Test Case 5:
 Input:
 ((""X"", ""X"", ""X""),
-(""O"", ""O"", ""None""),
-(""None"", ""None"", ""None""))
+(""O"", ""O"", None),
+(None, None, None))
 Output:
 ""X"""
 73,"#Last problem, you implemented a function that could find if
@@ -3177,58 +3182,58 @@ Output:
 #   Python ""wraps around"" and checks the last value. You
 #   may have to control for this.","Test Case 1:
 Input:
-((""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""O""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""X""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""O""),
-(""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""X""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""O""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""X""))
+((None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(""X"", ""O"", None, None, None, None, None),
+(""O"", ""X"", ""X"", None, ""O"", None, None),
+(""X"", ""O"", ""O"", ""X"", ""X"", ""O"", None))
 Output:
 None
 
 Test Case 2:
 Input:
-((""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""O""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""X""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""O""),
-(""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""X""),
-(""O"", ""X"", ""O"", ""X"", ""X"", ""X"", ""X""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""X""))
+((None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(""O"", ""O"", None, ""O"", None, None, None),
+(""O"", ""X"", ""X"", ""X"", ""X"", ""O"", None))
 Output:
 ""X""
 
 Test Case 3:
 Input:
-((""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""O""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""O""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""O""),
-(""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""X""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""O""),
-(""X"", ""X"", ""O"", ""O"", ""O"", ""O"", ""O""))
+((None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(None, None, None, ""O"", None, None, None),
+(None, None, ""X"", ""O"", None, None, None),
+(None, ""X"", ""X"", ""O"", ""X"", None, None),
+(""X"", ""O"", ""X"", ""O"", ""X"", None, None))
 Output:
 ""O""
 
 Test Case 4:
 Input:
-((""None"", ""None"", ""None"", ""None"", ""None"", ""None"", ""None""),
-(""None"", ""None"", ""None"", ""None"", ""None"", ""None"", ""None""),
-(""None"", ""None"", ""None"", ""None"", ""None"", ""None"", ""None""),
-(""None"", ""None"", ""None"", ""None"", ""None"", ""None"", ""None""),
-(""None"", ""None"", ""None"", ""None"", ""None"", ""None"", ""None""),
-(""X"", ""X"", ""X"", ""X"", ""None"", ""None"", ""None""))
+((None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(""X"", None, None, None, None, None, None),
+(""O"", ""X"", None, None, None, None, None),
+(""O"", ""O"", ""X"", None, None, None, None),
+(""X"", ""O"", ""O"", ""X"", None, None, None))
 Output:
 ""X""
 
 Test Case 5:
 Input:
-((""O"", ""O"", ""O"", ""X"", ""O"", ""O"", ""O""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""X""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""O""),
-(""O"", ""O"", ""X"", ""X"", ""O"", ""O"", ""X""),
-(""O"", ""X"", ""O"", ""X"", ""O"", ""X"", ""O""),
-(""X"", ""X"", ""O"", ""O"", ""X"", ""O"", ""X""))
+((None, None, None, None, None, None, None),
+(None, None, None, None, None, None, None),
+(None, None, None, None, None, None, ""O""),
+(None, None, None, None, None, ""O"", ""X""),
+(None, None, None, ""X"", ""O"", ""X"", ""X""),
+(None, None, ""X"", ""O"", ""X"", ""O"", ""X""))
 Output:
-""X"""
+""O"""
 74,"#Write a function called average_rainfall. average_rainfall
 #should have one parameter, a list of integers. The list
 #represents daily rainfall measurements for a certain area.
@@ -3315,7 +3320,7 @@ Test Case 4:
 Input:
 {""length"": 10, ""width"": 8, ""height"": 2}
 Output:
-{""length"": 10, ""width"": 8, ""height"": 2, ""volume"": 160, ""area"": 216}
+{""length"": 10, ""width"": 8, ""height"": 2, ""volume"": 160, ""area"": 232}
 
 Test Case 5:
 Input:
@@ -3428,7 +3433,7 @@ Test Case 5:
 Input:
 {""first"": ""Sigmund"", ""middle"": """", ""last"": ""Freud"", ""title"": ""Dr.""}
 Output:
-{""first"": ""Sigmund"", ""middle"": """", ""last"": ""Freud"", ""title"": ""Dr."", ""name"": ""Sigmund Freud"", ""full_name"": ""Dr. Sigmund Freud"", ""short_name"": ""S Freud""}"
+{""first"": ""Sigmund"", ""middle"": """", ""last"": ""Freud"", ""title"": ""Dr."", ""name"": ""Sigmund Freud"", ""full_name"": ""Dr. Sigmund  Freud"", ""short_name"": ""S Freud""}"
 78,"#Write a function called pivot_library. pivot_library takes
 #as input one parameter, a list of 3-tuples. Each tuple in
 #the list has three items: the first item is a book title
@@ -3474,7 +3479,7 @@ Input:
 [(""To Kill a Mockingbird"", ""Harper Lee"", ""978-0-06-112008-4""),
 (""1984"", ""George Orwell"", ""978-0-452-28423-4"")]
 Output:
-{""978-0-006-112008-4"": {""title"": ""To Kill a Mockingbird"", ""author"": ""Harper Lee""},
+{""978-0-06-112008-4"": {""title"": ""To Kill a Mockingbird"", ""author"": ""Harper Lee""},
 ""978-0-452-28423-4"": {""title"": ""1984"", ""author"": ""George Orwell""}}
 
 Test Case 5:
@@ -3483,7 +3488,7 @@ Input:
 (""Pride and Prejudice"", ""Jane Austen"", ""978-0-14-143951-8"")]
 Output:
 {""978-0-618-57472-6"": {""title"": ""The Lord of the Rings"", ""author"": ""J.R.R. Tolkien""},
-""978-0-014-143951-8"": {""title"": ""Pride and Prejudice"", ""author"": ""Jane Austen""}}"
+""978-0-14-143951-8"": {""title"": ""Pride and Prejudice"", ""author"": ""Jane Austen""}}"
 79,"#It's a well-known and indisputable fact that if you want
 #to make your name sound fancy, you should list it as only
 #your first two initials followed by your last name. For
@@ -3523,21 +3528,21 @@ Output:
 
 Test Case 3:
 Input:
-[""Albert Einstein"", ""Isaac Newton"", ""Charles Darwin""]
+[""Isaac Edward Newton"", ""Charles Robert Darwin"", ""Marie Salomea Curie""]
 Output:
-""A. Einstein, I. Newton, C. Darwin""
+""I. E. Newton, C. R. Darwin, M. S. Curie""
 
 Test Case 4:
 Input:
-[""Emily Dickinson"", ""Robert Frost"", ""Walt Whitman""]
+[""Emily Elizabeth Dickinson"", ""Robert Lee Frost""]
 Output:
-""E. Dickinson, R. Frost, W. Whitman""
+""E. E. Dickinson, R. L. Frost""
 
 Test Case 5:
 Input:
-[""Thomas Alva Edison"", ""Nikola Tesla"", ""Alexander Graham Bell""]
+[""Thomas Alva Edison"", ""Alexander Graham Bell"", ""Samuel Finley Morse""]
 Output:
-""T. A. Edison, N. Tesla, A. G. Bell"""
+""T. A. Edison, A. G. Bell, S. F. Morse"""
 80,"#In the game Rock-Paper-Scissors, two opponents
 #simultaneously choose to throw either ""Rock"", ""Paper"",
 #or ""Scissors"". Rock beats Scissors, Scissors beats Paper,
@@ -3578,7 +3583,7 @@ Test Case 2:
 Input:
 [(""Paper"", ""Scissors""), (""Scissors"", ""Rock""), (""Rock"", ""Scissors""), (""Paper"", ""Rock"")]
 Output:
-""Player 2 wins!""
+""It's a tie!""
 
 Test Case 3:
 Input:
@@ -3645,14 +3650,14 @@ Input:
 rest_and_rating = {'kfc': [4, 3, 4, 4, 3], 'popeyes': [5, 4, 4, 5, 5], 'chick-fil-a': [5, 5, 5, 5, 5]}
 value = 4.2
 Output:
-['kfc', 'popeyes', 'chick-fil-a']
+['popeyes', 'chick-fil-a']
 
 Test Case 5:
 Input:
 rest_and_rating = {'mcdonalds': [2, 2, 3, 3, 2], 'wendys': [3, 3, 3, 4, 3], 'sonic': [4, 4, 5, 4, 4]}
 value = 3.3
 Output:
-['wendys', 'sonic']"
+['sonic']"
 82,"#-----------------------------------------------------------
 #Write a function called no_you_pick. no_you_pick should
 #have two parameters. The first parameter is a dictionary
@@ -3766,7 +3771,7 @@ artists_and_songs = {
 }
 friends_artists = [""Ed Sheeran"", ""Adele"", ""Justin Bieber""]
 Output:
-""I guess I don't mind ads on the radio that much""
+[""Hello"", ""Photograph"", ""Rolling in the Deep"", ""Shape of You"", ""Someone Like You"", ""Thinking Out Loud""]
 
 Test Case 3:
 Input:
@@ -3778,7 +3783,7 @@ artists_and_songs = {
 }
 friends_artists = [""Coldplay"", ""U2"", ""The Beatles""]
 Output:
-[""Clocks"", ""Viva la Vida"", ""Yellow"", ""Hey Jude"", ""Let It Be"", ""Yesterday""]
+[""Beautiful Day"", ""Clocks"", ""Hey Jude"", ""Let It Be"", ""One"", ""Viva la Vida"", ""With or Without You"", ""Yellow"", ""Yesterday""]
 
 Test Case 4:
 Input:
@@ -3789,7 +3794,7 @@ artists_and_songs = {
 }
 friends_artists = [""Drake"", ""Kendrick Lamar"", ""Post Malone""]
 Output:
-[""Alright"", ""Circles"", ""Congratulations"", ""DNA."", ""God's Plan"", ""Hotline Bling"", ""HUMBLE."", ""In My Feelings"", ""Rockstar""]
+[""Alright"", ""Circles"", ""Congratulations"", ""DNA."", ""God's Plan"", ""HUMBLE."", ""Hotline Bling"", ""In My Feelings"", ""Rockstar""]
 
 Test Case 5:
 Input:
@@ -3800,7 +3805,7 @@ artists_and_songs = {
 }
 friends_artists = [""Madonna"", ""Britney Spears"", ""Justin Timberlake""]
 Output:
-""I guess I don't mind ads on the radio that much"""
+[""Like a Virgin"", ""Material Girl"", ""Vogue""]"
 84,"#You are going through your refrigerator at home and trying to determine whether you have the proper ingredients to cook a meal.
 #
 #Write a function called food_at_home. food_at_home should have one parameter, a list of foods in your house as strings. In order to cook a meal, the list must contain ""cooking oil"" and at least one other item. If this criteria is not met, return the string ""I guess it's pizza tonight"". If you do have cooking oil and at least one other food, return the string, ""You do have food, your options are ... or ... or ..."", where the ...s are replaced by the food names in the list in the order in which they appear. ""cooking oil"" should not be one of the foods listed under options.
@@ -3829,7 +3834,7 @@ Test Case 4:
 Input:
 food_list = [""salmon"", ""asparagus"", ""lemon"", ""olive oil"", ""salt"", ""pepper""]
 Output:
-""You do have food, your options are salmon or asparagus or lemon or salt or pepper""
+""I guess it's pizza tonight""
 
 Test Case 5:
 Input:
@@ -4138,52 +4143,39 @@ Output:
 #Hint 2: The formula for hypotenuse is the square root of
 #opposite squared plus adjacent squared. The easiest way to
 #find the square root is to use the exponent operator to
-#raise the sum to the 0.5 power (e.g. sum**0.5).","Suppose you are an online judge for coding problems. 
-I will give you some coding prompts or coding exercises (may be accompanied by a little code snippet sometimes).
-You will write me 5 test cases for them. Here's the format:
-
-Test Case 1:
+#raise the sum to the 0.5 power (e.g. sum**0.5).","Test Case 1:
 Input:
+RightTriangle(3.0, 4.0).find_hypotenuse()
 Output:
+5.0
 
-..and so on
-also rememner, I want the test cases in plain text.
+Test Case 2:
+Input:
+RightTriangle(5.0, 12.0).find_hypotenuse()
+Output:
+13.0
 
-Here's the first problem:
+Test Case 3:
+Input:
+RightTriangle(8.0, 15.0).find_hypotenuse()
+Output:
+17.0
 
-#Create a class called RightTriangle. RightTriangle should
-#have two attributes (instance variables): opposite and
-#adjacent. Make sure the variable names match those words.
-#Both will be floats.
-#
-#RightTriangle should have a constructor with two required
-#parameters, one for each of those attributes (opposite and
-#adjacent, in that order).
-#
-#RightTriangle should also have a method called
-#find_hypotenuse. find_hypotenuse should calculate the
-#hypotenuse of the triangle based on the current values for
-#opposite and adjacent.
-#
-#hypotenuse should NOT be an attribute of the class;
-#instead, hypotenuse should be calculated and returned live
-#when the method find_hypotenuse is called.
-#
-#The find_hypotenuse method should have NO parameters
-#besides self. Instead, it should calculate the hypotenuse
-#based on the current values for the opposite and adjacent
-#attributes.
-#
-#Hint: In other words: opposite and adjacent will be
-#attributes similar to guacamole and cheese in the Burrito
-#class from Problem Set 5.1. find_hypotenuse will be a
-#method similar to the get_cost method from the Burrito
-#class.
-#
-#Hint 2: The formula for hypotenuse is the square root of
-#opposite squared plus adjacent squared. The easiest way to
-#find the square root is to use the exponent operator to
-#raise the sum to the 0.5 power (e.g. sum**0.5)."
+Test Case 4:
+Input:
+t = RightTriangle(3.0, 4.0)
+t.opposite = 6.0
+t.adjacent = 8.0
+t.find_hypotenuse()
+Output:
+10.0
+
+Test Case 5:
+Input:
+t = RightTriangle(1.0, 1.0)
+t.opposite, t.adjacent
+Output:
+(1.0, 1.0)"
 91,"#Remember that Fibonacci's sequence is a sequence of numbers
 #where every number is the sum of the previous two numbers.
 #
@@ -4387,7 +4379,7 @@ Output: 11
 
 Test Case 5:
 Input: 1000000000
-Output: 1"
+Output: 0"
 96,"#A palindrome is a sequence of letters that is the same
 #forward and backward. For example, ""racecar"" is a
 #palindrome.
@@ -4451,7 +4443,7 @@ Output: ""Hello there!!ereht olleH""
 
 Test Case 5:
 Input: ""Was it a car or a cat I saw?""
-Output: ""Was it a car or a cat I saw?was I tac a ro rac a ti saW"""
+Output: ""Was it a car or a cat I saw?"""
 97,"#The game Uno is a card game where each player's goal is
 #to get rid of all their cards. A round ends when one player
 #has gotten rid of all their cards. They then receive a
@@ -4527,7 +4519,7 @@ Output: ""Player 4 wins!"""
 # - fib_skip(1) = 1
 # - fib_skip(2) = 1
 # - fib_skip(3) = 1
-# - fib_skip(4) = 3
+# - fib_skip(4) = 2
 # - fib_skip(9) = 13
 # - fib_skip(11) = 28
 #
@@ -4549,7 +4541,7 @@ Output: 1
 
 Test Case 4:
 Input: 4
-Output: 3
+Output: 2
 
 Test Case 5:
 Input: 9
@@ -4662,7 +4654,7 @@ Output: ""Error!""
 
 Test Case 4:
 Input: {1: ""one"", 2: ""two""}, 3, ""three""
-Output: {1: ""one"", 2: ""two""}
+Output: {1: ""one"", 2: ""two"", 3: ""three""}
 
 Test Case 5:
 Input: {1: ""one"", ""two"": 2}, (""three"",), 3
